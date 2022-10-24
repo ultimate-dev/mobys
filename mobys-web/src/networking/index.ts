@@ -35,7 +35,7 @@ const axios = ax.create({
 
 axios.interceptors.request.use(
   (config: any) => {
-    config.headers.common["authorization"] = `Bearer ${MStore.token}`;
+    //config.headers.common["authorization"] = `Bearer ${MStore.token}`;
     return config;
   },
   (error: any) => {

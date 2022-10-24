@@ -18,7 +18,7 @@ class API {
 }
 
 const apis = {
-  HELLO: new API("/hello"),
+  MARBLE_BLOCK: new API("/api/marble/block"),
 };
 
 export default apis;

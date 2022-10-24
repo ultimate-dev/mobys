@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `MarbleBlock` ADD COLUMN `weight` DOUBLE NOT NULL DEFAULT 0;

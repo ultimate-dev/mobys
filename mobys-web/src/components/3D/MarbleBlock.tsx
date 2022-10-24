@@ -1,16 +1,11 @@
-import { useLoader } from "@react-three/fiber";
-import * as THREE from "three";
+import { useTexture } from "@react-three/drei";
 
-const MarbleBlock = () => {
-  const textures = useLoader(
-    THREE.TextureLoader,
-    ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"].map(() =>
-      require("assets/images/marble/rossolevanto.jpeg")
-    )
-  );
+const MarbleBlock = ({ x, y, z, dice1, dice2, dice3, dice4, dice5, dice6 }: any) => {
+  const textures = useTexture([dice1, dice2, dice3, dice4, dice5, dice6]);
+
   return (
     <mesh position={[0, 0, 0]}>
-      <boxGeometry attach="geometry" args={[3, 3, 3]} />
+      <boxGeometry attach="geometry" args={[x, y, z]} />
       {textures.map((texture) => (
         <meshPhongMaterial attach="material" key={texture.uuid} map={texture} />
       ))}
