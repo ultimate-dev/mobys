@@ -21,7 +21,7 @@ import ROUTES from "constants/routes";
 // i18n
 import i18n from "i18n";
 // Components
-import Loading from "components/Loading";
+import Loading from "components/common/Loading";
 // Hooks
 import useNetworkConnection from "hooks/useNetworkConnection";
 // Services
