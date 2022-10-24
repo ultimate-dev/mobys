@@ -5,3 +5,5 @@ https://lodash.com/docs/4.17.15
 https://remixicon.com/
 https://react-hot-toast.com/docs
 https://reactrouter.com/en/main
+https://headlessui.com/
+https://tailwindcss.com/docs/installation

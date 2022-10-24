@@ -1288,6 +1288,16 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@headlessui/react@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.3.tgz#853c598ff47b37cdd192c5cbee890d9b610c3ec0"
+  integrity sha512-LGp06SrGv7BMaIQlTs8s2G06moqkI0cb0b8stgq7KZ3xcHdH3qMP+cRyV7qe5x4XEW/IGY48BW4fLesD6NQLng==
+
+"@heroicons/react@^2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.12.tgz#7e5a16c82512f89a30266dd36f8b8465b3e3e216"
+  integrity sha512-FZxKh3i9aKIDxyALTgIpSF2t6V6/eZfF5mRu41QlwkX3Oxzecdm1u6dpft6PQGxIBwO7TKYWaMAYYL8mp/EaOg==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.6"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.6.tgz"
@@ -2036,6 +2046,11 @@
   resolved "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
+"@types/aos@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/aos/-/aos-3.0.4.tgz#fd0dce430f18d118081aaced2c79c30617b15818"
+  integrity sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==
+
 "@types/aria-query@^4.2.0":
   version "4.2.2"
   resolved "https://registry.npmjs.org/@types/aria-query/-/aria-query-4.2.2.tgz"
@@ -2177,6 +2192,11 @@
   integrity sha512-QsbSjA/fSk7xB+UXlCT3wHBy5ai9wOcNDWwZAtud+jXhwOM3l+EYZh8Lng4+/6n8uar0J7xILzqftJdJ/Wdfkw==
   dependencies:
     "@types/node" "*"
+
+"@types/i18n-js@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@types/i18n-js/-/i18n-js-3.8.3.tgz#9aac0ac81c0b5f16d864b395607442eebb382528"
+  integrity sha512-Y20B7kgoNrchIYCfty20zQYeFFJMHdegwy9VopCEKdByp7Tlv0jtWrfoRb+3r2mIvgrwp/eMwXhhXOBYKEFkTA==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.4"
@@ -2861,6 +2881,15 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+aos@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/aos/-/aos-2.3.4.tgz#eb1c29f5c1806a197cf6323080747547edd3db8e"
+  integrity sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==
+  dependencies:
+    classlist-polyfill "^1.0.3"
+    lodash.debounce "^4.0.6"
+    lodash.throttle "^4.0.1"
+
 arg@^5.0.2:
   version "5.0.2"
   resolved "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz"
@@ -3464,6 +3493,11 @@ cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+
+classlist-polyfill@^1.0.3:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
+  integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
 
 classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.2"
@@ -6660,7 +6694,7 @@ lodash.clamp@^4.0.3:
   resolved "https://registry.yarnpkg.com/lodash.clamp/-/lodash.clamp-4.0.3.tgz#5c24bedeeeef0753560dc2b4cb4671f90a6ddfaa"
   integrity sha512-HvzRFWjtcguTW7yd8NJBshuNaCa8aqNFtnswdT7f/cMd/1YKy5Zzoq4W/Oxvnx9l7aeY258uSdDfM793+eLsVg==
 
-lodash.debounce@^4.0.8:
+lodash.debounce@^4.0.6, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
@@ -6689,6 +6723,11 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
   integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
+
+lodash.throttle@^4.0.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -8606,6 +8645,16 @@ react-merge-refs@^1.1.0:
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
   integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
 
+react-multi-carousel@^2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.8.2.tgz#4bbd7a9656d8e49e081745331593e5500eefdbe4"
+  integrity sha512-M9Y7DfAp8bA/r6yexttU6RLA7uyppje4c0ELRuCHZWswH+u7nr0uVP6qHNPjc4XGOEY1MYFOb5nBg7JvoKutuQ==
+
+react-parallax-tilt@^1.7.68:
+  version "1.7.68"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.68.tgz#0aeb733343d942706380c425c30b6f94579896b4"
+  integrity sha512-HDYxYrV8s/mu6Tm1uR+8qGGEvrblCmBEOJGxlUr6O1y0oDjhZ7d6oWr9SsqCvBU6iC/xz5b57kQy2zPeglkQ5Q==
+
 react-popper@^2.2.4:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-2.3.0.tgz#17891c620e1320dce318bad9fede46a5f71c70ba"
@@ -9300,6 +9349,11 @@ slash@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
+
+slugify@^1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.5.tgz#c8f5c072bf2135b80703589b39a3d41451fbe8c8"
+  integrity sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ==
 
 socket.io-client@^4.5.3:
   version "4.5.3"

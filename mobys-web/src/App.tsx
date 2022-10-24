@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { ToastContainer } from "react-toastify";
 import { observer } from "mobx-react-lite";
+import AOS from "aos";
 // Moment
 import moment from "moment";
 import "moment/locale/tr";
@@ -28,7 +29,13 @@ import useNetworkConnection from "hooks/useNetworkConnection";
 import { socket } from "services/socket.service";
 
 function App() {
+  /**
+   * Socket
+   */
   IStore.setSocket(socket);
+  /**
+   * Locale
+   */
   useEffect(() => {
     if (MStore.locale) {
       i18n.locale = MStore.locale;
@@ -36,13 +43,31 @@ function App() {
       document.documentElement.lang = MStore.locale;
     }
   }, [MStore.locale]);
-
+  /**
+   * Network Connection
+   */
   let { isOnline } = useNetworkConnection();
   useEffect(() => {
     if (!isOnline) console.log("Offline");
     else console.log("Online");
   }, [isOnline]);
 
+  /**
+   * AOS Generate
+   */
+  useEffect(() => {
+    AOS.init({
+      offset: 80,
+      duration: 1000,
+      easing: "ease",
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
+
+  /**
+   * Socket Connection
+   */
   IStore.socket?.on("connect", () => {
     console.log("Connected");
   });
