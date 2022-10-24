@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router-dom": "^5.3.3",
     "@types/reactstrap": "^8.7.2",
+    "@types/three": "^0.144.0",
     "animate.css": "^4.1.1",
     "antd": "^4.23.6",
     "aos": "^2.3.4",

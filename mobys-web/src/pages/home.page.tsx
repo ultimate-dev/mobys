@@ -1,5 +1,14 @@
+import MarbleBlock from "components/3D/MarbleBlock";
+import Scene from "components/3D/Scene";
+
 const HomePage = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Scene>
+        <MarbleBlock />
+      </Scene>
+    </>
+  );
 };
 
 export default HomePage;
