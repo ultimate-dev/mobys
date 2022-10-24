@@ -6,7 +6,9 @@ import App from "./App";
 import "animate.css";
 import "remixicon/fonts/remixicon.css";
 import "react-toastify/dist/ReactToastify.css";
+import "assets/css/antd.css";
 import "assets/css/tailwind.css";
+import "assets/scss/bootstrap/bootstrap.scss";
 import "assets/scss/styles.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);

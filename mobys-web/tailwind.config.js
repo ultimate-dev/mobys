@@ -11,7 +11,7 @@ module.exports = {
         primary: "#D83442",
       },
       fontFamily: {
-        sans: ["Gilroy"],
+        sans: ["Poppins", "Gilroy"],
       },
       borderRadius: {
         DEFAULT: "4px",

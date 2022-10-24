@@ -15,14 +15,20 @@ import "moment/locale/fa";
 import "moment/locale/en-gb";
 // Store
 import MStore from "store/main.store";
+import IStore from "store/instant.store";
 // Constants
 import ROUTES from "constants/routes";
 // i18n
 import i18n from "i18n";
 // Components
 import Loading from "components/Loading";
+// Hooks
+import useNetworkConnection from "hooks/useNetworkConnection";
+// Services
+import { socket } from "services/socket.service";
 
 function App() {
+  IStore.setSocket(socket);
   useEffect(() => {
     if (MStore.locale) {
       i18n.locale = MStore.locale;
@@ -30,6 +36,20 @@ function App() {
       document.documentElement.lang = MStore.locale;
     }
   }, [MStore.locale]);
+
+  let { isOnline } = useNetworkConnection();
+  useEffect(() => {
+    if (!isOnline) console.log("Offline");
+    else console.log("Online");
+  }, [isOnline]);
+
+  IStore.socket?.on("connect", () => {
+    console.log("Connected");
+  });
+  IStore.socket?.on("disconnect", () => {
+    console.log("Disconnected");
+  });
+
   return (
     <div>
       <Loading />
