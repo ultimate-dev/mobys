@@ -34,7 +34,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
 
 ### :bar_chart: SWOT Analizi
-![SWOT Analizi](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
+![SWOT Analizi](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/swot-analizi.jpg)
 
 ## :hash: Teknoloji Hazırlık Seviyeleri
 
@@ -78,3 +78,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 9. ...
 10. ...
 
+## :camera: Versiyon Videoları
+* [Alfa Versiyon](https://youtu.be/HNrZELbpmrc)
