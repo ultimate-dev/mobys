@@ -6,6 +6,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 * [:fire: Geliştiriciler](#fire-geliştiriciler)
 * [:file_folder: Dosya Sistemi](#file_folder-dosya-sistemi)
+* [:calendar: İş Planı](#calendar-i̇ş-planı)
+* [:abcd: Gantt Şeması](#abcd-gantt-şeması)
 * [:star: Sistem Planı](#star-sistem-planı)
 * [:bar_chart: SWOT Analizi](#bar_chart-swot-analizi)
 * [:hash: Teknoloji Hazırlık Seviyeleri](#hash-teknoloji-hazırlık-seviyeleri)
@@ -19,7 +21,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 | [Burak ÖZDEMİRTAŞ](https://github.com/burakozdemirtas) | 205541302 | Frontend |
 
 ### :file_folder: Dosya Sistemi
-
 * mobys-web
 * mobys-api
 * mobys-service
@@ -27,10 +28,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * mobys-html
 * mobys-notebooks
 
+### :calendar: İş Planı
+![İş Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
+
+### :abcd: Gantt Şeması
+![Gantt Şeması](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
+
 ### :star: Sistem Planı
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
 
 ### :bar_chart: SWOT Analizi
+![SWOT Analizi](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
 
 ## :hash: Teknoloji Hazırlık Seviyeleri
 
