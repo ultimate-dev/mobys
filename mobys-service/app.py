@@ -1,34 +1,39 @@
+import configs
 from flask import Flask, request, jsonify
 from services.image_service import ImageService
 from services.color_service import ColorService
 
-configs = {
-
-}
-
-p = {
-    'host': '192.168.137.74',
-    'port': 5000,
-}
-
-app = Flask(__name__, **configs)
-
+# Create the Flask app
+app = Flask(__name__, **configs.FLASK_CONFIG)
+# Services
 imageService = ImageService()
 colorService = ColorService()
 
 
-@app.route('/')
-def get():
-    try:
-        args = request.args
-        img = imageService.getImage(
-            args["img_url"])
-        hex_colors = colorService.getTopColors(img)
+# Hello World Route
+@app.route('/', methods=['GET'])
+def helloWorld():
+    return "Hello World"
 
-        return jsonify(data='Hello, World!', args=args,hex_colors=hex_colors)
+
+# Image Route
+@app.route('/image', methods=['GET'])
+def image():
+    try:
+        img_url = request.args.get("img_url")
+        # Get the image
+        img = imageService.getImage(
+            img_url)
+        # Get the top colors
+        colors = colorService.getTopColors(img)
+        
+
+        # Return the data
+        return jsonify(colors=colors)
     except Exception as e:
         return jsonify(data=str(e))
 
 
+# Run the app
 if __name__ == "__main__":
-    app.run(debug=True, **p)
+    app.run(**configs.APP_CONFIG)

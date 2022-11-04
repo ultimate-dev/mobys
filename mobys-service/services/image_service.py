@@ -9,6 +9,7 @@ class ImageService:
     def __init__(self):
         return None
 
+    # Get an image from a URL
     def getImage(self, url):
         context = ssl._create_unverified_context()
         req = urlopen(url, context=context)
