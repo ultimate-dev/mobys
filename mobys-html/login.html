@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/site.css">
+      
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    
+    <title>Login Page</title>
+
+    <style>
+        
+        *{
+    margin:0;
+    padding: 0;
+}
+
+@-webkit-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-moz-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-ms-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-o-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid " style="background: #2980b9 url('tumblr_static_bg3.png'); background-repeat:no-repeat; background-size:cover; ">
+    <div class="container-fluid w-100 vh-100 " >
+        <section class="vh-100" >
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-xl-10">
+                        <div class="card" style="border-radius: 1rem;">
+                            <div class="row g-0">
+                                <div class="col-md-6 col-lg-6 d-none d-md-block">
+                                    <img src="login2.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; background-size:cover;" />
+                                </div>
+                                <div class="col-md-6 col-lg-6 d-flex align-items-center">
+                                    <div class="card-body p-4 p-lg-5 text-black">
+    
+                                        <form class="form" method="get" action="">
+    
+                                            <div class="d-flex align-items-center mb-1 pb-1">
+                                                <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                                <span class="h1 fw-bold mb-0">Mobys</span>
+    
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3 pb-1">
+                                                <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                                <span class="h5 fw-bold mb-0 text-muted">Mermer Ocağı Bilgi Yönetim Sistemi</span>
+    
+                                            </div>
+    
+                                            <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Hesabınıza giriş yapın</h5>
+    
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">Email</label>
+                                                <input type="email" id="mobysEmail" class="form-control form-control-lg" required>
+    
+                                            </div>
+    
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example27">Şifre</label>
+                                                <input type="password" id="mobysPassword" class="form-control form-control-lg" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="20" autocomplete="off" title="En az bir büyük ve bir küçük harf, bir rakam içermeli ve en az 8 karakter olmalıdır."  required>
+    
+                                            </div>
+                                            <div class="burak"> sadasdsaasddassdsd</div>
+                                            <div class="pt-1 mb-4">
+                                                <button class="btn btn-dark btn-lg btn-block" type="submit" >Giriş</button>
+                                            </div>
+                                            <a class="small text-muted" href="#!">Şifremi unuttum</a>
+                                            <p class="mb-1 pb-lg-2" style="color: #393f81;">Hesabınız yok mu? <a href="#!" style="color: #393f81;">Kayıt olun</a></p>
+                                            <!-- a trigger modal -->
+                                            <a href="#!" class="small text-muted" data-toggle="modal" data-target="#exampleModalLong">Gizlilik Politikası</a>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Gizlilik Politikası</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        
+                                                        <div class="modal-body">
+                                                            1) GİZLİLİK POLİTİKASI :
+    Surtaş mermer fabrikası san. ve tic. a.ş (“surtaş mermer”) olarak, kullanıcılarımızın hizmetlerimizden güvenli ve eksiksiz şekilde faydalanmalarını sağlamak amacıyla sitemizi kullanan üyelerimizin gizliliğini korumak için çalışıyoruz. Bu doğrultuda, işbu Surtaş mermer Gizlilik Politikası (“Politika”), üyelerimizin kişisel verilerinin 6698 sayılı Kişisel Verilerin Korunması Kanunu (“Kanun”) ile tamamen uyumlu bir şekilde işlenmesi ve kullanıcılarımızı bu bağlamda bilgilendirmek amacıyla hazırlanmıştır. surtasmermer.com çerez politikası İşbu Politika’nın ayrılmaz parçasıdır.
+    
+    İşbu Politika’nın amacı, Surtas mermer tarafından işletilmekte olan www.surtasmermer.com internet sitesi ile mobil uygulamanın (bunların hepsi birlikte “Platform” olarak anılacaktır.) işletilmesi sırasında Platform ziyaretçileri/kullanıcıları (bunların hepsi birlikte “Veri Sahibi” olarak anılacaktır.) tarafından Surtaş mermer ile paylaşılan veya Ssurtaş mermer’in, Veri Sahibi’nin Platform’u kullanımı sırasında ürettiği kişisel verilerin kullanımına ilişkin koşul ve şartları tespit etmektir.
+    
+    Hangi Veriler İşlenmektedir?
+    
+    Aşağıda Surtaş mermer tarafından işlenen ve Kanun uyarınca kişisel veri sayılan verilerin hangileri olduğu sıralanmıştır. Aksi açıkça belirtilmedikçe, işbu Politika kapsamında arz edilen hüküm ve koşullar kapsamında “kişisel veri” ifadesi “Kimlik Bilgisini”, “İletişim Bilgisini”, “Kullanıcı Bilgisini”, “Kullanıcı İşlem Bilgisini”, “İşlem Güvenliği Bilgisini”, “Finansal Bilgiyi”, “Pazarlama Bilgisini ve Talep/Şikayet Yönetimi Bilgisini”  kapsayacaktır.
+    
+    Kişisel Verilerin Korunması Kanunu’nun 3. ve 7. maddeleri dairesince, geri döndürülemeyecek şekilde anonim hale getirilen veriler, anılan kanun hükümleri uyarınca kişisel veri olarak kabul edilmeyecek ve bu verilere ilişkin işleme faaliyetleri işbu Politika hükümleri ile bağlı olmaksızın gerçekleştirecektir.
+    
+     Kişisel Veri İşleme Amaçları
+    
+    Surtaş mermer, Veri Sahibi tarafından sağlanan kişisel verileri, üyelik kaydı ve hesabının oluşturulması ve buna ilişkin kayıtların tutulması, Veri Sahibinin Platform üzerinden sağlanan hizmetlerden faydalandırılması sistem hatalarının tespit edilerek performans takibinin yapılması ve Platform’un işleyişinin iyileştirilmesi, bakım ve destek hizmetleri ile yedekleme hizmetlerinin sunulması amaçları dahil olmak üzere Surtaş mermer tarafından sunulan ürün ve hizmetlerden ilgili kişileri faydalandırmak için gerekli çalışmaların iş birimleri tarafından yapılması ve ilgili iş süreçlerinin yürütülmesi ile bu ürün ve hizmetlerin ilgili kişilerin beğeni, kullanım alışkanlıkları ve ihtiyaçlarına göre özelleştirilerek ilgili kişilere önerilmesi ve tanıtılması için gerekli olan aktivitelerin planlanması ve icrası, Surtaş mermer tarafından yürütülen ticari faaliyetlerin gerçekleştirilmesi için ilgili iş birimleri tarafından gerekli çalışmaların yapılması ve buna bağlı iş süreçlerinin yürütülmesi, Surtaş mermer ve iş ilişkisi içerisinde bulunduğu kişilerin hukuki, teknik ve ticari-iş güvenliğinin temini ile Surtaş mermer’ in ticari ve/veya iş stratejilerinin planlanması ve icrası amaçlarıyla işlenebilecektir.
+    
+    Veri Sahiplerinin Açık Rızası Doğrultusunda İşlenecek Kişisel Veriler ve İşleme Amaçları
+    
+    Veri Sahibi’nin açık rızası kapsamında, Surtaş mermer, Veri Sahipleri’nin Platform üzerindeki hareketlerini takip ederek kullanıcı deneyiminin artırılması, istatistik oluşturulması, profilleme yapılması, doğrudan pazarlama ve yeniden pazarlama, Veri Sahibi’ne özel promosyon önerilerinin oluşturulması ve Veri Sahibi’ne iletilmesi ve bu kapsamda elde edilen verilerin her türlü reklam ve materyal içeriğinde kullanılması amacıyla veri işleyebilecek ve aşağıda anılan taraflarla bu verileri paylaşabilecektir.
+    
+    Kişisel Verilerin Aktarımı:
+    
+    Surtaş mermer, Veri Sahibi’ne ait kişisel verileri ve bu kişisel verileri kullanılarak elde ettiği yeni verileri, işbu Gizlilik Politikası ile belirlenen amaçların gerçekleştirilebilmesi için Surtaş mermer’ in hizmetlerinden faydalandığı üçüncü kişilere, söz konusu hizmetlerin temini amacıyla sınırlı olmak üzere aktarılabilecektir. Surtaş mermer, Veri Sahibi deneyiminin geliştirilmesi (iyileştirme ve kişiselleştirme dâhil), Veri Sahibi’nin güvenliğini sağlamak, hileli ya da izinsiz kullanımları tespit etmek, operasyonel değerlendirme araştırılması, Platform hizmetlerine ilişkin hataların giderilmesi ve işbu Gizlilik Politikası’nda yer alan amaçlardan herhangi birisini gerçekleştirebilmek için SMS gönderimi yapanlar da dahil olmak üzere dış kaynak hizmet sağlayıcıları, barındırma hizmet sağlayıcıları (hosting servisleri), hukuk büroları, araştırma şirketleri, çağrı merkezleri gibi üçüncü kişiler ile paylaşabilecektir.
+    
+    Kişisel veriler, Kanun’un 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları çerçevesinde Surtaş mermer fabrikası san. ve tic. a.ş yetkilileri, hissedarları, iş ortaklarımız, tedarikçilerimiz, kanunen yetkili kamu kurum ve kuruluşları ile kanunen yetkili özel kurumlar ile paylaşılabilecek, bu amaçlarla sınırlı olarak Kanun madde 9’da işaret edilen usul esaslar ile Kişisel Verileri Koruma Kurulu kararları çerçevesinde yurt dışına aktarılabilecektir.
+    
+    Kişisel Verilerin Toplanma Yönetimi ve Hukuki Sebebi
+    
+    Kişisel veriler, Platform üzerinden ve elektronik ortamda toplanmaktadır. Yukarıda belirtilen hukuki sebeplerle toplanan kişisel veriler 6698 sayılı Kanun’un 5. ve 6. maddelerinde ve bu Gizlilik Politikası’nda belirtilen amaçlarla işlenebilmekte ve aktarılabilmektedir.
+    
+    Kişisel Veri Sahibinin Hakları
+    
+    Kanun’un 11. maddesi uyarınca veri sahipleri,
+    
+    Kendileri ile ilgili kişisel veri işlenip işlenmediğini öğrenme, kişisel verileri işlenmişse buna ilişkin bilgi talep etme,
+    Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
+    Kişisel verilerin eksik veya yanlış işlenmiş olması halinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+    Kanun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması halinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+    İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme ve kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması halinde zararın giderilmesini talep etme haklarına sahiptir.
+    Söz konusu hakların kullanımına ilişkin talepler, kişisel veri sahipleri tarafından https://www.surtasmermer.com adresinde yer alan 6698 sayılı Kanun Kapsamında Surtaş mermer tarafından hazırlanan Kişisel Verilerin İşlenmesi ve Korunmasına ilişkin Politika’da belirtilen yöntemlerle iletilebilecektir. Surtaş mermer, söz konusu talepleri otuz gün içerisinde sonuçlandıracaktır. Surtaş mermer’ in taleplere ilişkin olarak Kişisel Verileri Koruma Kurulu tarafından belirlenen (varsa) ücret tarifesi üzerinden ücret talep etme hakkı saklıdır.
+    
+    2) ÇEREZ POLİTİKASI :
+    Surtaş mermer fabrikası san. ve tic. a.ş (“Surtaş mermer”) olarak, kullanıcılarımızın hizmetlerimizden güvenli ve eksiksiz şekilde faydalanmalarını sağlamak amacıyla sitemizi kullanan kişilerin gizliliğini korumak için çalışıyoruz.
+    
+    Çoğu web sitesinde olduğu gibi, https://www.surtasmermer.com (“Site”) ile mobil uygulamanın (hepsi birlikte “Platform” olarak anılacaktır.) ziyaretçilere kişisel içerik ve reklamlar göstermek, site içinde analitik faaliyetler gerçekleştirmek ve ziyaretçi kullanım alışkanlıklarını takip etmek amacıyla Çerezler kullanılmaktadır.
+    
+    İşbu Çerez Politikası https://www.surtasmermer.com Gizlilik Politikası’nın ayrılmaz bir parçasıdır.
+    
+    Surtaş mermer, bu Çerez Politikası’nı (“Politika”) Site’de hangi Çerezlerin kullanıldığını ve kullanıcıların bu konudaki tercihlerini nasıl yönetebileceğini açıklamak amacıyla hazırlamıştır. surtaş mermer tarafından kişisel verilerinizin işlenmesine ilişkin daha detaylı bilgi için https://www.surtasmermer.com Gizlilik Politikası’nı incelemenizi tavsiye ederiz.
+    
+    Çerez (“Cookie”) Nedir?
+    
+    Çerezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcılar aracılığıyla cihazınıza veya ağ sunucusuna depolanan küçük metin dosyalarıdır. Çerezler, ziyaret ettiğiniz web sitesiyle ilişkili sunucular tarafından oluşturulurlar. Böylelikle ziyaretçi aynı siteyi ziyaret ettiğinde sunucu bunu anlayabilir.
+    
+    Çerezler, ziyaretçilere ilişkin isim, cinsiyet veya adres gibi kişisel verileri içermezler. Çerezler konusunda daha detaylı bilgi için www.aboutcookies.org ve www.allaboutcookies.org adreslerini ziyaret edebilirisiniz.
+    
+     Hangi Çerezler Kullanılmaktadır?
+    
+    Çerezler, sahipleri, kullanım ömürleri ve kullanım amaçları açısında kategorize edilebilir:
+    
+    Çerezi yerleştiren tarafa göre, Platform çerezleri ve üçüncü taraf Çerezler kullanılmaktadır. Platform çerezleri, Surtaş mermer tarafından oluşturulurken, üçüncü taraf çerezlerini Surtaş mermer ile iş birlikteliği olan farklı firmalar yönetmektedir.
+    Aktif olduğu süreye göre, oturum çerezlerive kalıcı çerezler kullanılmaktadır. Oturum çerezleri ziyaretçinin Platform’u terk etmesiyle birlikte silinirken, kalıcı çerezler ise kullanım alanına bağlı olarak çeşitli sürelerle ziyaretçilerin cihazlarında kalabilmektedir.
+    Kullanım amaçlarına göre, Platform’da teknik çerezler, doğrulama çerezleri, hedefleme/reklam çerezleri, kişiselleştirme çerezleri ve analitik çerezler kullanılmaktadır.
+    Neden Çerezler Kullanılmaktadır?
+    
+    Platform’da, Çerezler aşağıdaki amaçlar kapsamında kullanılmaktadır:
+    
+    Platform’un çalışması için gerekli temel fonksiyonları gerçekleştirmek.
+    Platform’u analiz etmek ve Platform’un performansını arttırmak.Örneğin, Platform’un üzerinde çalıştığı farklı sunucuların entegrasyonu, Platform’u ziyaret edenlerin sayısının tespit edilmesi ve buna göre performans ayarlarının yapılması ya da ziyaretçilerin aradıklarını bulmalarının kolaylaştırılması.
+    Platform’un işlevselliğini arttırmak ve kullanım kolaylığı sağlamak. Örneğin, Platform üzerinden üçüncü taraf sosyal medya mecralarına paylaşımda bulunmak, Platform’u ziyaret eden ziyaretçinin daha sonraki ziyaretinde kullanıcı adı bilgisinin ya da arama sorgularının hatırlanması
+    Kişiselleştirme, hedefleme ve reklamcılık faaliyeti gerçekleştirmek.Örneğin, ziyaretçilerin görüntüledikleri sayfa ve ürünler üzerinden ziyaretçilerin ilgi alanlarıyla bağlantılı reklam gösterilmesi.
+    Çerez Tercihlerinizi Nasıl Yönetebilirsiniz?
+    
+    Surtaş mermer, kullanıcıların kendilerine ait kişisel veriler üzerindeki tercihlerini kullanabilmelerini son derece önemsemektedir. Bununla birlikte, Site’nin çalışması için zorunlu olan bazı Çerezler konusunda tercih yönetimi mümkün olmamaktadır. Ayrıca bazı Çerezlerin kapatılması halinde Site’nin çeşitli fonksiyonlarının çalışmayabileceğini hatırlatma isteriz.
+    
+    Platform’da kullanılan Çerezlere dair tercihlerin ne şekilde yönetebileceğine dair bilgiler aşağıdaki gibidir:
+    
+    Ziyaretçiler, Platform’u görüntüledikleri tarayıcı ayarlarını değiştirerek çerezlere ilişkin tercihlerini kişiselleştirme imkanına sahiptir. Eğer kullanılmakta olan tarayıcı bu imkânı sunmaktaysa, tarayıcı ayarları üzerinden Çerezlere ilişkin tercihleri değiştirmek mümkündür. Böylelikle, tarayıcının sunmuş olduğu imkanlara göre farklılık gösterebilmekle birlikte, veri sahiplerinin çerezlerin kullanılmasını engelleme, çerez kullanılmadan önce uyarı almayı tercih etme veya sadece bazı Çerezleri devre dışı bırakma ya da silme imkanları bulunmaktadır. Bu konudaki tercihler kullanılan tarayıcıya göre değişiklik göstermekle birlikte genel açıklamaya https://www.aboutcookies.org/ adresinden ulaşmak mümkündür. Çerezlere ilişkin tercihlerin, ziyaretçinin Platform’a erişim sağladığı her bir cihaz özelinde ayrı ayrı yapılması gerekebilecektir.
+    Google Analytics tarafından yönetilen Çerezleri kapatmak için tıklayınız.
+    Google tarafından sağlanan kişiselleştirilmiş reklam deneyimini yönetmek için tıklayınız.
+    Birçok firmanın reklam faaliyetleri için kullandığı çerezler bakımından tercihler Your Online Choices üzerinden yönetilebilir.
+    Mobil cihazlar üzerinden Çerezleri yönetmek için mobil cihaza ait ayarlar menüsü kullanılabilir.
+    Hangi Haklara Sahipsiniz?
+    
+    6698 Sayılı Kişisel Verilerin Korunması Kanunu’nun 11. maddesi uyarınca ziyaretçiler, Surtaş mermere başvurarak, kendileriyle ilgili,
+    
+    Kişisel veri işlenip işlenmediğini öğrenme,
+    Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,
+    Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+    Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
+    Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+    Kanun ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+    İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,
+    Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme haklarına sahiptir.
+    Söz konusu haklar, kişisel veri sahipleri tarafından 6698 sayılı Kanun Kapsamında Surtaş mermer tarafından hazırlanan Kişisel Verilerin İşlenmesi ve Korunmasına ilişkin Politika’da belirtilen yöntemlerle iletildiğinde her hâlükârda 30 (otuz) gün içerisinde değerlendirilerek sonuçlandırılacaktır. Taleplere ilişkin olarak herhangi bir ücret talep edilmemesi esas olmakla birlikte, Surtaş mermer, Kişisel Verileri Koruma Kurulu tarafından belirlenen ücret tarifesi üzerinden ücret talep etme hakkını saklı tutar.
+    
+    Rıza ve Gizlilik Politikasındaki Değişiklikler
+    
+    Surtaş Mermer, Gizlilik Politikası (“Politika”) ile kullanıcılarına Çerez kullanımının kapsamı ve amaçları hakkında detaylı açıklama sunmayı ve Çerez tercihleri konusunda kullanıcılarını bilgilendirmeyi hedeflemiştir. Bu bakımdan, Platform’da yer alan Çerez bilgilendirme uyarısının kapatılması ve Site’nin kullanılmaya devam edilmesi halinde Çerez kullanımına rıza verildiği kabul edilmektedir. Kullanıcıların Çerez tercihlerini değiştirme imkânı her zaman saklıdır.
+    
+    Surtaş mermer, Politika hükümlerini dilediği zaman değiştirebilir. Güncel Politika Platform’da yayınlandığı tarihte yürürlük kazanır.
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                                                            <button type="button" class="btn btn-primary"  data-dismiss="modal">Okudum, Anladım</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+                                        </form>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+</body>
+</html>
