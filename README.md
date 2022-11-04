@@ -4,13 +4,13 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-[Şükrü Taha BIYIK](https://github.com/ultimate-dev)
-
-* [Geliştiriciler](https://github.com/ultimate-dev)
-* [Sistem Planı](https://github.com/ultimate-dev)
-* [SWOT Analizi](https://github.com/ultimate-dev)
-* [Teknoloji Hazırlık Seviyeleri](https://github.com/ultimate-dev)
+* [Geliştiriciler](#)
 * [Dosya Sistemi](#)
+* [Sistem Planı](#)
+* [SWOT Analizi](#)
+* [Teknoloji Hazırlık Seviyeleri](#)
+* [Dosya Sistemi](#)
+* [Toplantılar](#)
 
 
 ### :fire: Geliştiriciler
@@ -18,13 +18,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 | :--- | :--- | :--- |
 | [Şükrü Taha BIYIK](https://github.com/ultimate-dev) | 195542006 | Backend |
 | [Burak ÖZDEMİRTAŞ](https://github.com/burakozdemirtas) | 205541302 | Frontend |
-
-
-
-### :star: Sistem Planı
-![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
-
-### :bar_chart: SWOT Analizi
 
 ### :file_folder: Dosya Sistemi
 
@@ -35,6 +28,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * mobys-html
 * mobys-notebooks
 
+### :star: Sistem Planı
+![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
+
+### :bar_chart: SWOT Analizi
 
 ## :hash: Teknoloji Hazırlık Seviyeleri
 
@@ -64,3 +61,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### :nine:  THS9
 ...
+
+## Toplantılar
+
+1. ---
+
