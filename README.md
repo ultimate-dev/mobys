@@ -7,7 +7,6 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * [:fire: Geliştiriciler](#fire-geliştiriciler)
 * [:file_folder: Dosya Sistemi](#file_folder-dosya-sistemi)
 * [:calendar: İş Planı](#calendar-i̇ş-planı)
-* [:abcd: Gantt Şeması](#abcd-gantt-şeması)
 * [:star: Sistem Planı](#star-sistem-planı)
 * [:bar_chart: SWOT Analizi](#bar_chart-swot-analizi)
 * [:hash: Teknoloji Hazırlık Seviyeleri](#hash-teknoloji-hazırlık-seviyeleri)
@@ -29,10 +28,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * mobys-notebooks
 
 ### :calendar: İş Planı
-![İş Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
-
-### :abcd: Gantt Şeması
-![Gantt Şeması](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
+[mobys plan](https://github.com/users/ultimate-dev/projects/4)
 
 ### :star: Sistem Planı
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
