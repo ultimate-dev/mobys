@@ -11,6 +11,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * [:bar_chart: SWOT Analizi](#bar_chart-swot-analizi)
 * [:hash: Teknoloji Hazırlık Seviyeleri](#hash-teknoloji-hazırlık-seviyeleri)
 * [:bomb: Toplantılar](#bomb-toplantılar)
+* [:camera: Versiyon Videoları](#camera-versiyon-videoları)
 
 
 ### :fire: Geliştiriciler
