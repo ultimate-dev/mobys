@@ -4,13 +4,12 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-* [Geliştiriciler](#)
-* [Dosya Sistemi](#)
-* [Sistem Planı](#)
-* [SWOT Analizi](#)
-* [Teknoloji Hazırlık Seviyeleri](#)
-* [Dosya Sistemi](#)
-* [Toplantılar](#)
+* [:fire: Geliştiriciler](#)
+* [:file_folder: Dosya Sistemi](#)
+* [:star: Sistem Planı](#)
+* [:bar_chart: SWOT Analizi](#)
+* [:hash: Teknoloji Hazırlık Seviyeleri](#)
+* [:bomb: Toplantılar](#)
 
 
 ### :fire: Geliştiriciler
@@ -62,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ### :nine:  THS9
 ...
 
-## Toplantılar
+## :bomb: Toplantılar
 
 1. ---
 
