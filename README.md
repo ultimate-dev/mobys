@@ -4,12 +4,12 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-* [:fire: Geliştiriciler](#)
-* [:file_folder: Dosya Sistemi](#)
-* [:star: Sistem Planı](#)
-* [:bar_chart: SWOT Analizi](#)
-* [:hash: Teknoloji Hazırlık Seviyeleri](#)
-* [:bomb: Toplantılar](#)
+* [:fire: Geliştiriciler](#fire-geliştiriciler)
+* [:file_folder: Dosya Sistemi](#file_folder-dosya-sistemi)
+* [:star: Sistem Planı](#star-sistem-planı)
+* [:bar_chart: SWOT Analizi](#bar_chart-swot-analizi)
+* [:hash: Teknoloji Hazırlık Seviyeleri](#hash-teknoloji-hazırlık-seviyeleri)
+* [:bomb: Toplantılar](#bomb-toplantılar)
 
 
 ### :fire: Geliştiriciler
