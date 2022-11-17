@@ -39,6 +39,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 
 # :file_folder: Dosya Sistemi
 * mobys-web
+* mobys-app
 * mobys-api
 * mobys-service
 * mobys-docs
