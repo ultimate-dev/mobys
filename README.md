@@ -1,6 +1,21 @@
-# MOBYS - Mermer Ocağı Bilgi Yönetim Sistemi
+ 
+ 
+ <br />
+<div align="center">
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/ultimate-dev/mobys)">
+   <img src="https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/logo.png" width="160" height="160"  />
+  </a>
 
- :warning: **MOBYS v0.8(Alfa)**
+  <h1 align="center">Fırat MOBYS - Mermer Ocağı Bilgi Yönetim Sistemi</h1>
+
+  <p align="center">
+    :warning: <b>v0.8(Alfa)</b>
+  </p>
+</div>
+
+
+
+ 
 
 Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta olan firmalarının mermer bloklarını satıcılarla kolay ve güvenilir şekilde satış yapabilmelerini sağlayacak bir platform oluşturmaktır. Bunun için yapay zeka, görüntü işleme ve blockchain teknolojileri kullanılmıştır.
 
@@ -16,13 +31,13 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * [:camera: Versiyon Videoları](#camera-versiyon-videoları)
 
 
-### :fire: Geliştiriciler
+# :fire: Geliştiriciler
 | Şükrü Taha BIYIK | Öğrenci Numarası | Görevler |
 | :--- | :--- | :--- |
 | [Şükrü Taha BIYIK](https://github.com/ultimate-dev) | 195542006 | Backend |
 | [Burak ÖZDEMİRTAŞ](https://github.com/burakozdemirtas) | 205541302 | Frontend |
 
-### :file_folder: Dosya Sistemi
+# :file_folder: Dosya Sistemi
 * mobys-web
 * mobys-api
 * mobys-service
@@ -30,16 +45,16 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * mobys-html
 * mobys-notebooks
 
-### :calendar: İş Planı
+# :calendar: İş Planı
 [mobys plan](https://github.com/users/ultimate-dev/projects/4)
 
-### :star: Sistem Planı
+# :star: Sistem Planı
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
 
-### :bar_chart: SWOT Analizi
+# :bar_chart: SWOT Analizi
 ![SWOT Analizi](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/swot-analizi.jpg)
 
-## :hash: Teknoloji Hazırlık Seviyeleri
+# :hash: Teknoloji Hazırlık Seviyeleri
 
 ###  :one: THS1
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -83,3 +98,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## :camera: Versiyon Videoları
 * [Alfa Versiyon](https://youtu.be/HNrZELbpmrc)
+
+
+
+
+
