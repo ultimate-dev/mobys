@@ -11,31 +11,51 @@ datasource db {
 }
 
 model User {
-  id       Int    @id @default(autoincrement())
-  email    String @unique
-  name     String
-  surname  String
-  password String
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String
+  surname   String
+  password  String
+  status    Status   @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model MarbleBlock {
-  id     Int               @id @default(autoincrement())
-  x      Float
-  y      Float
-  z      Float
-  dice1  String            @db.Text
-  dice2  String            @db.Text
-  dice3  String            @db.Text
-  dice4  String            @db.Text
-  dice5  String            @db.Text
-  dice6  String            @db.Text
-  weight Float             @default(0)
-  color  String?
-  class  MarbleBlockClass?
+  id                Int                @id @default(autoincrement())
+  x                 Float
+  y                 Float
+  z                 Float
+  weight            Float
+  colors            Json?
+  status            Status             @default(ACTIVE)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @default(now()) @updatedAt
+  marbleBlockImages MarbleBlockImage[]
 }
 
-enum MarbleBlockClass {
-  A
-  B
-  C
+model MarbleBlockImage {
+  id            Int           @id @default(autoincrement())
+  image         String
+  type          BlockPosition
+  marbleBlockId Int
+  marbleBlock   MarbleBlock   @relation(fields: [marbleBlockId], references: [id])
+  status        Status        @default(ACTIVE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @default(now()) @updatedAt
+}
+
+enum BlockPosition {
+  TOP
+  BOTTOM
+  FRONT
+  BACK
+  LEFT
+  RIGHT
+}
+
+enum Status {
+  ACTIVE
+  PASSIVE
+  DELETED
 }

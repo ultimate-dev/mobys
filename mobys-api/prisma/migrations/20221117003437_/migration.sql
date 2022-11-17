@@ -1,0 +1,29 @@
+-- CreateTable
+CREATE TABLE `MarbleBlock` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `x` DOUBLE NOT NULL,
+    `y` DOUBLE NOT NULL,
+    `z` DOUBLE NOT NULL,
+    `weight` DOUBLE NOT NULL,
+    `status` ENUM('ACTIVE', 'PASSIVE', 'DELETED') NOT NULL DEFAULT 'ACTIVE',
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `MarbleBlockImage` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `image` VARCHAR(191) NOT NULL,
+    `type` ENUM('TOP', 'BOTTOM', 'FRONT', 'BACK', 'LEFT', 'RIGHT') NOT NULL,
+    `marbleBlockId` INTEGER NOT NULL,
+    `status` ENUM('ACTIVE', 'PASSIVE', 'DELETED') NOT NULL DEFAULT 'ACTIVE',
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- AddForeignKey
+ALTER TABLE `MarbleBlockImage` ADD CONSTRAINT `MarbleBlockImage_marbleBlockId_fkey` FOREIGN KEY (`marbleBlockId`) REFERENCES `MarbleBlock`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

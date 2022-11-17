@@ -26,7 +26,6 @@ def image():
             img_url)
         # Get the top colors
         colors = colorService.getTopColors(img)
-        
 
         # Return the data
         return jsonify(colors=colors)

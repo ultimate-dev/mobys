@@ -1,11 +1,47 @@
 import { NextFunction, Request, Response } from "express";
+import { PrismaClient } from "@prisma/client";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+
 const router = require("express").Router();
+const prisma = new PrismaClient();
+
+const SECRET_KEY: any = process.env.SECRET_KEY;
 
 router.post("/login", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    res.json({
-      error: false,
+    let { email, password } = req.body;
+    console.log(email, password);
+
+    let user = await prisma.user.findFirst({
+      where: {
+        status: "ACTIVE",
+        email,
+      },
     });
+    if (user) {
+      let passwordCompare = await bcrypt.compare(password, user.password);
+
+      if (passwordCompare) {
+        // @ts-ignore
+        user["letters"] = user.name[0] + user.surname[0];
+
+        let token = await jwt.sign({ ...user, time: new Date() }, SECRET_KEY);
+        res.json({
+          error: false,
+          user,
+          token,
+        });
+      } else {
+        res.json({
+          error: true,
+        });
+      }
+    } else {
+      res.json({
+        error: true,
+      });
+    }
   } catch (error) {
     res.json({
       error: true,
@@ -15,9 +51,36 @@ router.post("/login", async (req: Request, res: Response, next: NextFunction) =>
 
 router.post("/verify", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    res.json({
-      error: false,
-    });
+    let { token } = req.body;
+    if (token) {
+      let decoded: any = await jwt.verify(token, SECRET_KEY);
+      if (decoded) {
+        let user = await prisma.user.findFirst({
+          where: {
+            status: "ACTIVE",
+            email: decoded.email,
+          },
+        });
+        if (user)
+          res.json({
+            error: false,
+            user: decoded,
+          });
+        else {
+          res.json({
+            error: true,
+          });
+        }
+      } else {
+        res.json({
+          error: true,
+        });
+      }
+    } else {
+      res.json({
+        error: true,
+      });
+    }
   } catch (error) {
     res.json({
       error: true,

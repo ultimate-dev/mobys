@@ -36,10 +36,10 @@ app.get("/", async (req: Request, res: Response, next: NextFunction) => {
  * Routes
  */
 app.use("/auth", require("./routes/auth.route"));
+app.use("/upload", require("./routes/upload.route"));
 // Api Routes
-//app.use(`/api`, require("./middlewares/token.verify"));
 app.use(`/api`, require("./routes/api/index.route"));
-app.use(`/api/marble/block`, require("./routes/api/marbleBlock.route"));
+app.use("/api/marble", require("./routes/api/marble.route"));
 
 /**
  * Http 404 Error
