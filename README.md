@@ -97,10 +97,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 9. ...
 10. ...
 
-## :camera: Versiyon Videoları
-* [Alfa Versiyon](https://youtu.be/HNrZELbpmrc)
-
-
 
 
 
