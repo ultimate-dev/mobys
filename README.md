@@ -39,12 +39,66 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 
 # :file_folder: Dosya Sistemi
 * mobys-web
+  1. NPM Paketlerin İndirilmesi
+     ```sh
+     yarn install
+     ```
+  2. Proje Ayar Dosyalarının Yapılandırılması `configs.ts`
+     ```sh
+     export const APP_NAME = "Fırat MOBYS";
+     export const OWNER_NAME = "Mermer Ocağı Bilgi Yönetim Sistemi";
+     export const API_URL = "http://localhost:2323";
+     ```
+  3. Projenin Başlatılması
+     ```js
+     yarn start
+     ```
+
 * mobys-app
+  1. NPM Paketlerin İndirilmesi
+     ```sh
+     expo install
+     ```
+  2. Proje Ayar Dosyalarının Yapılandırılması `configs.ts`
+     ```sh
+     export const API_URL = "http://127.0.0.1:2323/";
+     ```
+  3. Projenin Başlatılması
+     ```js
+     expo start
+     ```
 * mobys-api
+  1. NPM Paketlerin İndirilmesi
+     ```sh
+     yarn install
+     ```
+  2. Proje Ayar Dosyalarının Yapılandırılması `.env`
+     ```sh
+     DATABASE_URL=mysql://admin:123456@127.0.0.1:8889/mobys
+     PORT=2323
+     SECRET_KEY=marble23
+     BASE_URL=http://127.0.0.1:2323
+     SERVICE_URL=http://127.0.0.1:5000/
+     ```
+  3. Projenin Başlatılması
+     ```js
+     yarn dev
+     ```
 * mobys-service
-* mobys-docs
-* mobys-html
-* mobys-notebooks
+  1. Proje Ayar Dosyalarının Yapılandırılması `configs.py`
+     ```sh
+     FLASK_CONFIG = {}
+     APP_CONFIG = {
+      'debug': True,
+      'host': '127.0.0.1',
+      #'host': '192.168.137.74',
+      'port': 5000,
+     }
+     ```
+  2. Projenin Başlatılması
+     ```js
+     python3 app.py
+     ```
 
 # :calendar: İş Planı
 [mobys plan](https://github.com/users/ultimate-dev/projects/4)
