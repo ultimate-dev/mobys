@@ -4,6 +4,8 @@
 
 Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta olan firmalarının mermer bloklarını satıcılarla kolay ve güvenilir şekilde satış yapabilmelerini sağlayacak bir platform oluşturmaktır. Bunun için yapay zeka, görüntü işleme ve blockchain teknolojileri kullanılmıştır.
 
+
+
 * [:fire: Geliştiriciler](#fire-geliştiriciler)
 * [:file_folder: Dosya Sistemi](#file_folder-dosya-sistemi)
 * [:calendar: İş Planı](#calendar-i̇ş-planı)
