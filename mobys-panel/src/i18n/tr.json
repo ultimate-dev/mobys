@@ -1,0 +1,106 @@
+{
+  "key": "tr",
+  "label": "Türkçe",
+
+  "routes": {
+    "account": "Hesabım",
+    "dashboard": "Göstege Paneli",
+    "menus": "Menüler",
+    "products": "Ürünler",
+    "tables": "Masalar",
+    "floors": "Katlar",
+    "modifiers": "Ürün Seçenekleri",
+    "ingredient_prescription": "Hammade/Reçete",
+    "ingredients": "Hammadeler",
+    "product_prescription": "Ürün Reçete",
+    "translations": "Çeviriler",
+    "orders": "Siparişler",
+    "payments": "Gelir/Gider",
+    "income": "Gelir",
+    "expense": "Gider",
+    "stock": "Stok",
+    "stockLists": "Stok Listesi",
+    "stockTransactions": "Stok Hareketleri",
+    "case": "Kasa",
+    "statistics": "İstatistik",
+    "statisticOrders": "Sipariş İstatistik",
+    "statisticSales": "Satış İstatistik",
+    "statisticStock": "Stok İstatistik",
+    "reports": "Raporlar",
+    "reportOrders": "Sipariş Raporu",
+    "reportSales": "Satış Raporu",
+    "reportStock": "Stok Raporu",
+    "restaurant": "Bayi Ayarları",
+    "restaurants": "Bayilerim",
+    "supplier": "Firma Ayarları",
+    "trash": "Çöp Kutusu"
+  },
+
+  "sections": {
+    "definitions": "Tanımlar",
+    "analysis": "Analiz",
+    "settings": "Ayarlar",
+    "tools": "Araçlar"
+  },
+
+  "auth": {
+    "welcome": "Fırat MOBYS'a Hoşgeldiniz",
+    "email": "E-Posta",
+    "password": "Şifre",
+    "rememberMe": "Beni Hatırla!",
+    "login": "Giriş Yap",
+    "notFoundUser": "Kullanıcı Bulunamadı.",
+    "logOut": "Çıkış Yap"
+  },
+
+  "alert": {
+    "noInternetConnection": "İnternet Bağlantısı Yok!",
+    "noServerConnection": "Sunucu Bağlantısı Yok!"
+  },
+  "success": {
+    "CREATED": "Kayıt Oluşturuldu.",
+    "DELETED": "Çöp Kutusuna Taşındı.",
+    "UPDATED": "Değişiklikler Kaydedildi."
+  },
+  "error": {
+    "UNEXPECTED": "İşlem sırasında beklenmedik bir hatayla karşılaşıldı!",
+    "404": "404",
+    "401": "401",
+    "502": "502"
+  },
+  "NOCHOICE": "--Seçim Yok--",
+  "orderStatus": {
+    "CREATED": "Yeni Sipariş",
+    "PREPARING": "Hazırlanıyor",
+    "READY": "Hazır",
+    "PAID": "Ödendi",
+    "ONTHEWAY": "Yolda",
+    "COMPLATED": "Tamamlandı",
+    "CANCELLED": "İptal Edildi",
+    "RETURNED": "İade Edildi"
+  },
+  "orderProductStatus": {
+    "WAITING": "Hazırlanıyor",
+    "APPROVED": "Hazır"
+  },
+  "paymentType": {
+    "CASH": "Nakit",
+    "CREDIT": "Kredi Kartı",
+    "DISCOUNT": "İndirim",
+    "CHANGE": "Para Üstü",
+    "RETURNED": "İade Edildi",
+    "CANCELLED": "İptal Edildi"
+  },
+  "status": {
+    "ACTIVE": "Aktif",
+    "PASSIVE": "Pasif",
+    "DELETED": "Silindi"
+  },
+  "userRole": { "USER": "Garson" },
+  "quantityType": {
+    "PIECE": "Adet",
+    "PORTION": "Porsiton",
+    "KILOGRAM": "Kilogram",
+    "GRAM": "Gram"
+  }
+}

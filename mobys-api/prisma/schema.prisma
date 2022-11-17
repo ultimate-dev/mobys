@@ -10,15 +10,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Supplier {
+  id           Int           @id @default(autoincrement())
+  name         String
+  status       Status        @default(ACTIVE)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @default(now()) @updatedAt
+  users        User[]
+  marbleBlocks MarbleBlock[]
+}
+
 model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String
-  surname   String
-  password  String
-  status    Status   @default(ACTIVE)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
+  id         Int       @id @default(autoincrement())
+  email      String    @unique
+  name       String
+  surname    String
+  password   String
+  role       UserRole
+  status     Status    @default(ACTIVE)
+  supplierId Int?
+  supplier   Supplier? @relation(fields: [supplierId], references: [id])
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @default(now()) @updatedAt
 }
 
 model MarbleBlock {
@@ -27,11 +40,13 @@ model MarbleBlock {
   y                 Float
   z                 Float
   weight            Float
-  colors            Json?
+  colors            Json
   status            Status             @default(ACTIVE)
   createdAt         DateTime           @default(now())
   updatedAt         DateTime           @default(now()) @updatedAt
   marbleBlockImages MarbleBlockImage[]
+  supplierId        Int
+  supplier          Supplier           @relation(fields: [supplierId], references: [id])
 }
 
 model MarbleBlockImage {
@@ -58,4 +73,9 @@ enum Status {
   ACTIVE
   PASSIVE
   DELETED
+}
+
+enum UserRole {
+  SUPPLIER
+  CUSTOMER
 }

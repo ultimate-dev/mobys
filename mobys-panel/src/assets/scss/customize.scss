@@ -1,0 +1,41 @@
+.ant-tabs-nav {
+  margin-bottom: -1px !important;
+}
+.ant-form .ant-form-item-label {
+  padding: 0px !important;
+  margin-bottom: 3px;
+}
+.ant-form .ant-form-item-label > label {
+  color: $gray-600 !important;
+}
+.ant-form .ant-form-item {
+  margin-bottom: 12px !important;
+}
+
+.ant-drawer {
+  z-index: 9997 !important;
+}
+
+.ant-select-dropdown {
+  z-index: 9998 !important;
+}
+.ant-picker-dropdown {
+  z-index: 9998 !important;
+}
+.ant-drawer {
+  .ant-drawer-content-wrapper {
+    min-width: 450px;
+  }
+}
+
+.ant-form-item .ant-picker {
+  width: 100% !important;
+}
+
+.btn,
+.btn * {
+  white-space: nowrap !important;
+}
+.ant-segmented-item {
+  margin-bottom: 0px !important;
+}

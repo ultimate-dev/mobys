@@ -38,8 +38,10 @@ app.get("/", async (req: Request, res: Response, next: NextFunction) => {
 app.use("/auth", require("./routes/auth.route"));
 app.use("/upload", require("./routes/upload.route"));
 // Api Routes
+app.use(`/api`, require("./middlewares/token.middleware"));
 app.use(`/api`, require("./routes/api/index.route"));
 app.use("/api/marble", require("./routes/api/marble.route"));
+app.use("/api/account", require("./routes/api/account.route"));
 
 /**
  * Http 404 Error

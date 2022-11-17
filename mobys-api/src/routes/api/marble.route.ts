@@ -5,9 +5,9 @@ import marbleService from "../../services/marble.service";
 const router = express.Router();
 const prisma = new PrismaClient();
 
-router.put("/", async (req: Request, res: Response, next: NextFunction) => {
+router.put("/", async (req: any, res: Response, next: NextFunction) => {
   try {
-    let { x, y, z, weight, images } = req.body;
+    let { x, y, z, weight, images, supplierId } = req.body;
     let colors = {};
     await Promise.all(
       Object.keys(images).map(async (key) => {
@@ -32,6 +32,7 @@ router.put("/", async (req: Request, res: Response, next: NextFunction) => {
             };
           }),
         },
+        supplierId: req.supplierId || supplierId,
       },
     });
 
