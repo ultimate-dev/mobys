@@ -1,0 +1,21 @@
+-- AlterTable
+ALTER TABLE `MarbleBlock` ADD COLUMN `order` BOOLEAN NOT NULL DEFAULT false;
+
+-- CreateTable
+CREATE TABLE `Order` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `price` VARCHAR(191) NOT NULL,
+    `status` ENUM('ACTIVE', 'PASSIVE', 'DELETED') NOT NULL DEFAULT 'ACTIVE',
+    `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `customerId` INTEGER NOT NULL,
+    `marbleBlockId` INTEGER NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- AddForeignKey
+ALTER TABLE `Order` ADD CONSTRAINT `Order_customerId_fkey` FOREIGN KEY (`customerId`) REFERENCES `Company`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE `Order` ADD CONSTRAINT `Order_marbleBlockId_fkey` FOREIGN KEY (`marbleBlockId`) REFERENCES `MarbleBlock`(`id`) ON DELETE RESTRICT ON UPDATE CASCADE;

@@ -5,6 +5,24 @@ import marbleService from "../../services/marble.service";
 const router = express.Router();
 const prisma = new PrismaClient();
 
+router.get("/", async (req: any, res, next) => {
+  try {
+    let marbleBlocks = await prisma.marbleBlock.findMany({
+      where: {
+        companyId: req.companyId,
+      },
+      include: { marbleBlockImages: true },
+    });
+    res.json({
+      error: false,
+      marbleBlocks,
+    });
+  } catch (error) {
+    console.error(error);
+    res.json({ error: true });
+  }
+});
+
 router.put("/", async (req: any, res: Response, next: NextFunction) => {
   try {
     let { x, y, z, weight, images, companyId } = req.body;

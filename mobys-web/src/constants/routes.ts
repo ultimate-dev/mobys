@@ -11,6 +11,9 @@ import AccountPage from "pages/account.page";
 import DashboardPage from "pages/dashboard.page";
 import SuppliersPage from "pages/suppliers.page";
 import SupplierMarblesPage from "pages/supplier_marbles";
+import CustomersPage from "pages/customers.page";
+import MarblesPage from "pages/marbles.page";
+import OrdersPage from "pages/orders.page";
 
 const ROUTES: any[] = [
   {
@@ -43,6 +46,12 @@ const ROUTES: any[] = [
         roles: [],
       },
       {
+        path: "/customers",
+        element: CustomersPage,
+        props: {},
+        roles: [],
+      },
+      {
         path: "/suppliers",
         element: SuppliersPage,
         props: {},
@@ -51,6 +60,18 @@ const ROUTES: any[] = [
       {
         path: "/suppliers/:id",
         element: SupplierMarblesPage,
+        props: {},
+        roles: [],
+      },
+      {
+        path: "/marbles",
+        element: MarblesPage,
+        props: {},
+        roles: [],
+      },
+      {
+        path: "/orders",
+        element: OrdersPage,
         props: {},
         roles: [],
       },

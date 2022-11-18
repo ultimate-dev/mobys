@@ -8,7 +8,7 @@ import i18n from "i18n";
 import DataTable from "components/common/DataTable";
 import Breadcrumb from "components/common/Breadcrumb";
 // Controllers
-import SupplierController from "controllers/supplier.controller";
+import MarbleController from "controllers/marbles.controller";
 // Constants
 import { Status } from "constants/statuses";
 import { StatusColor } from "constants/colors";
@@ -17,77 +17,25 @@ import MarbleBlock from "components/3D/MarbleBlock";
 import Scene from "components/3D/Scene";
 import IStore from "store/instant.store";
 
-const SUPPLIER_COLUMNS: any[] = [
-  {
-    key: "status",
-    title: "Durum",
-    type: "tag",
-    tags: Object.values(Status).map((status: any) => ({
-      label: i18n.t("status." + status),
-      value: status,
-      color: StatusColor[status],
-    })),
-  },
-  {
-    type: "image",
-    key: "logo",
-    title: "Logo",
-  },
-  {
-    type: "text",
-    key: "name",
-    title: "Tedarikçi Adı",
-  },
-];
-
 const SuppliersPage = () => {
   let { id }: any = useParams();
-  let [supplierC] = useState(new SupplierController());
+  let [marbleC] = useState(new MarbleController());
 
   useEffect(() => {
-    supplierC.getSupplier(id);
+    marbleC.get();
   }, []);
 
   return (
     <>
-      <Breadcrumb title={supplierC.supplier?.name} />
+      <Breadcrumb title={"Ürünler"} />
       <Row>
         <Col>
           <Tabs type="card">
-            <Tabs.TabPane tab={supplierC.supplier?.name} key="supplier">
-              <Card>
-                <Row>
-                  <Col md={4}>
-                    <Image
-                      src={supplierC.supplier?.logo}
-                      width={"100%"}
-                      height={200}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Col>
-                  <Col md={8}>
-                    <h3 className="border-bottom">{supplierC.supplier?.name}</h3>
-                    <p className="text-muted">{supplierC.supplier?.dec}</p>
-                    <div className="text-primary">
-                      <i className="fa fa-phone me-2" />
-                      <i>{supplierC.supplier?.phone}</i>
-                    </div>
-                    <div className="text-primary">
-                      <i className="fa fa-envelope me-2" />
-                      <i>{supplierC.supplier?.email}</i>
-                    </div>
-                    <div className="text-primary">
-                      <i className="fa fa-map me-2" />
-                      <i>{supplierC.supplier?.address}</i>
-                    </div>
-                  </Col>
-                </Row>
-              </Card>
-            </Tabs.TabPane>
+          
             <Tabs.TabPane tab={"Mermerler"} key="marbles">
               <Card>
                 <Row>
-                  {supplierC.supplier?.marbleBlocks.map((marbleBlock: any) => (
+                  {marbleC.marbleBlocks.map((marbleBlock: any) => (
                     <Col md={4} className="mb-3">
                       <Scene>
                         <MarbleBlock
@@ -124,18 +72,6 @@ const SuppliersPage = () => {
                         <small className="me-2">Konum:</small>
                         <small className="text-primary">Elazığ/Türkiye</small>
                       </div>
-                      {IStore.user?.company.type == "CUSTOMER" && (
-                        <Button
-                          className="btn btn-primary btn-block w-100 mt-2"
-                          onClick={() =>
-                            supplierC.orderBlock(marbleBlock.id, () => {
-                              supplierC.getSupplier(id);
-                            })
-                          }
-                        >
-                          Sipariş Ver
-                        </Button>
-                      )}
                     </Col>
                   ))}
                 </Row>

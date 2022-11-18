@@ -1,8 +1,9 @@
 import { useTexture } from "@react-three/drei";
 
-const MarbleBlock = ({ x, y, z, dice1, dice2, dice3, dice4, dice5, dice6 }: any) => {
-  const textures = useTexture([dice1, dice2, dice3, dice4, dice5, dice6]);
-
+const MarbleBlock = ({ x, y, z, dices = [] }: any) => {
+  console.log("dices", dices);
+  const textures = useTexture([...dices]);
+  console.log("textures", textures);
   return (
     <mesh position={[0, 0, 0]}>
       <boxGeometry attach="geometry" args={[x, y, z]} />

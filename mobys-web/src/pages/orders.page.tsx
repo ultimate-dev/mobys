@@ -8,11 +8,12 @@ import i18n from "i18n";
 import DataTable from "components/common/DataTable";
 import Breadcrumb from "components/common/Breadcrumb";
 // Controllers
-import CustomerController from "controllers/customers.controller";
+import OrderController from "controllers/order.controller";
 // Constants
 import { Status } from "constants/statuses";
 import { StatusColor } from "constants/colors";
 import { useNavigate } from "react-router-dom";
+import IStore from "store/instant.store";
 
 const SUPPLIER_COLUMNS: any[] = [
   {
@@ -26,23 +27,32 @@ const SUPPLIER_COLUMNS: any[] = [
     })),
   },
   {
-    type: "image",
-    key: "logo",
-    title: "Logo",
+    type: "number",
+    key: "marbleBlockId",
+    title: "Mermer ID",
   },
+  ...(IStore.user?.company.type == "CUSTOMER"
+    ? [
+        {
+          type: "text",
+          key: "customer.name",
+          title: "Müşteri Adı",
+        },
+      ]
+    : []),
   {
-    type: "text",
-    key: "name",
-    title: "Müşteriler Adı",
+    type: "date",
+    key: "createdAt",
+    title: "Sipariş Tarihi",
   },
 ];
 
 const SuppliersPage = () => {
   let navgate = useNavigate();
-  let [customerController] = useState(new CustomerController());
+  let [orderC] = useState(new OrderController());
 
   useEffect(() => {
-    customerController.get();
+    orderC.get();
   }, []);
 
   return (
@@ -51,22 +61,15 @@ const SuppliersPage = () => {
       <Row>
         <Col>
           <Tabs type="card">
-            <Tabs.TabPane tab={"Tedarikçiler"} key="suppliers">
+            <Tabs.TabPane tab={"Siparişler"} key="suppliers">
               <DataTable
                 columns={SUPPLIER_COLUMNS}
-                data={customerController.customers}
-                actions={[
-                  {
-                    icon: "eye",
-                    color: "primary",
-                    onClick: (record) => navgate("/suppliers/" + record.id),
-                  },
-                ]}
+                data={orderC.orders}
                 buttons={[
                   {
                     text: "Yenile",
                     color: "secondary",
-                    onClick: () => customerController.get(),
+                    onClick: () => orderC.get(),
                   },
                 ]}
               />

@@ -30,7 +30,7 @@ router.get("/:id", async (req, res, next) => {
         id: parseInt(id),
         type: "SUPPLIER",
       },
-      include: { marbleBlocks: true },
+      include: { marbleBlocks: { where: { order: false }, include: { marbleBlockImages: true } } },
     });
     res.json({
       error: false,

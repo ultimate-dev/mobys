@@ -24,7 +24,7 @@ const NAVS: any[] = [
   },
   {
     icon: "layout-grid-line",
-    to: "/products",
+    to: "/marbles",
     name: "Ürünler",
     roles: [UserRole.SUPPLIER, UserRole.CUSTOMER],
   },

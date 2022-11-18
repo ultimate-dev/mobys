@@ -43,6 +43,8 @@ app.use(`/api`, require("./routes/api/index.route"));
 app.use("/api/marble", require("./routes/api/marble.route"));
 app.use("/api/account", require("./routes/api/account.route"));
 app.use("/api/supplier", require("./routes/api/supplier.route"));
+app.use("/api/order", require("./routes/api/order.route"));
+app.use("/api/customer", require("./routes/api/customer.route"));
 
 /**
  * Http 404 Error

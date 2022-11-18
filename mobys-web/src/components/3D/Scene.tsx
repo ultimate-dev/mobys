@@ -7,7 +7,7 @@ class SceneProps {
 }
 const Scene = ({ children }: SceneProps) => {
   return (
-    <Canvas style={{ width: 500, height: 500 }} className="border bg-dark">
+    <Canvas style={{ width: "100%", height: 300 }} className="border rounded bg-white">
       <Suspense fallback={null}>
         <ambientLight />
         {children}
