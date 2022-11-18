@@ -109,6 +109,10 @@ const SuppliersPage = () => {
                         ))}
                       </div>
                       <div className="d-flex justify-content-start text-muted">
+                        <small className="me-2">Ağırlık:</small>
+                        <small className="text-primary">{marbleBlock.weight}ton</small>
+                      </div>
+                      <div className="d-flex justify-content-start text-muted">
                         <small className="me-2">Kırık:</small>
                         <small className="text-primary">---</small>
                       </div>

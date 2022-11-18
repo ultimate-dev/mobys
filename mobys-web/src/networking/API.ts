@@ -20,7 +20,7 @@ class API {
 const apis = {
   AUTH_LOGIN: new API("/auth/login"),
   AUTH_VERIFY: new API("/auth/verify"),
-  UPLOAD: new API("/api/upload"),
+  UPLOAD: new API("/upload"),
   SUPPLIERS: new API("/api/supplier"),
   SUPPLIER: new API("/api/supplier/$1"),
   CUSTOMERS: new API("/api/customer"),
@@ -28,6 +28,7 @@ const apis = {
   ORDER: new API("/api/order/$1"),
   ACCOUNT: new API("/api/account"),
   MARBLES: new API("/api/marble"),
+  MARBLE: new API("/api/marble/$1"),
   ACCOUNT_EMAIL: new API("/api/account/email"),
   ACCOUNT_PASSWORD: new API("/api/account/password"),
 };
