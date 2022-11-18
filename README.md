@@ -28,7 +28,6 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 * [:bar_chart: SWOT Analizi](#bar_chart-swot-analizi)
 * [:hash: Teknoloji Hazırlık Seviyeleri](#hash-teknoloji-hazırlık-seviyeleri)
 * [:bomb: Toplantılar](#bomb-toplantılar)
-* [:camera: Versiyon Videoları](#camera-versiyon-videoları)
 
 
 # :fire: Geliştiriciler
@@ -183,10 +182,18 @@ Projemizde 8 ayrı filtre kullanılarak sonuçların doğruluk yüzdesinin artma
 
 ## :bomb: Toplantılar
 
-1. ...
-2. ...
-3. ...
-4. ...
+<b>1.Toplantı(24.10.2022):</b> Bu sprintimizde proje ile alakalı fikir alışverişi yapıldı. Proje ile ilgili bilir kişiden mermer üzerine kalite bilgileri, önem bilgileri, desenlerin neye göre belirlendiği, renklerin neye göre belirlendiği, fiyat konusunda baz alınacak şeyler, kaliteli bir mermerin nasıl belirleneceği öğrenildi. Yapacağımız şeyler konuşulup, bir yol haritası oluşturuldu. Projelerimizde neler olacağı, neler tespit edileceği konuşuldu. Projemizin hangi dille yazılacağı, hangi platformda yayınlanacağı kararlaştırıldı. Fikir alışverişinde ilerlememiz ile alakalı detaylar konuşuldu. Rakip analizi yapılıp eksikler ve fazlalar tartıldı. Kullanacağımız desenlere yönelik fonksiyonlar düşüldü. Kullanacağımız desenler konuşulup, seçeneklerimizi arttırdık.  </br> </br>
+Projemizde görev dağılımını eşit yapmak için belirli alanlar seçilip dağıtımı sağlandı. Diğer bir sprinte kadar yapacaklarımız konuşuldu.  Mermer yapıları için hangi   filtrelerin uygun olabileceği konuşuldu. Mermerler için daha önceden yazılmış makalelerin araştırılması için öneri sunuldu. Mermer desen tespiti gibi tespitlerin       daha önce nasıl yapıldığının araştırılması kararlaştırıldı.  Dataset bulmak için herkesin araştırmasının gerektiği belirtildi. Ekipteki herkesin araştırma yapacağı     alanlar belirlenip toplantı sonlandırıldı.
+
+<b>2.Toplantı(31.10.2022):</b> Ekipçe toplanılıp herkesin görev dağılımında ki görevlerinin yerine getirilip getirilmediği kontrol edildi. Yapılan araştırmalar sonucu ortaya konulan araştırma konuları üzerine beyin fırtınası yapıldı. Mermer projemiz için kullanılacak filtreler için beyin fırtınası yapılıp, kullanılacak filtreler belirlendi. Mermer projemiz için yapılacak tespitler için uygun olanları seçilip, ekipçe kullanılacak tespitler kesinleşti.  Filtre ve tespitler için görev dağılımı yapıldı. Projemizin daha da gelişmesi için beyin fırtınası yapıldı.</br> </br>
+Yapılan çalışmalar sonucu, desen ve tespitler için proje kodlarının denenmesi ve diğer bir sprintte gösteriminin yapılmasına karar kılındı. Bulunan data setlerin kontrolü yapılıp, hangi data setin daha uygun olduğu düşünülüp uygun olanı seçildi. Bulunan tespitler açıklandı. Renk tespiti, desen tespiti, kırık tespiti uygun görülüp kullanılması karar kılındı. Bu tespitlerin geliştirilmesi için diğer bir sprinte kadar kodlanıp data set üzerinde denenilmesi, çıkacak sonuçların gösterilmesi ve sunulması karar kılındı. Renk tespiti için renklerin nasıl seçileceği düşünülüp, en yüksek yüzdeli rengin belirlenip projede seçilmesi karar kılındı. Desen tespitinde ise tekrar eden desenin belirlenip sonuç olarak alınması karar kılındı.
+
+<b>3.Toplantı(07.11.2022):</b> Ekipçe toplanılıp sprinte başlandı. Kullanılan filtrelerin, tespitlerin özelleştirilmiş kodlarına bakıldı ve bu sprintte kodların birleştirilmesi kararı alındı. Kodlarımızın birleştirilip web ortamına aktarılması kararı kılındı. Web ve mobil platformda çalışması kararlaştırıldı. Bu platformlar için React Native dilinin kullanılması seçildi. React bilmeyenler için diğer bir sprinte kadar React dili için kalan zamanı eğitim ile geçirmesi önerildi. </br> </br>
+Kullanılan tespitlerin doğrulukları kontrol edildi. Renk tespitinin doğruluk yüzdesi kontrol edildi ve renk seçimi incelendi. Desen tespitinin hangi desenleri gördüğü ve doğruluk yüzdesi tespit edildi. Kırık tespiti için kullanılan filtrelerde kırıkların belirginliği ve kırık görme hassasiyeti incelenip, doğruluk yüzdesi belirlendi. 
+
+<b>4.Toplantı(14.11.2022):</b> Bu sprintte kodların birleştirilmiş hali görüldü. Web ortamına aktarılan kodların çalışması gözlendi. Web ortamında olan eksikler not edilip, geliştirilmesi için fikir alışverişi yapıldı. Web ortamındaki algoritmaya eklenen data set görselindeki tespitlerin doğruluğu gözlendi. Proje için her bir sprintte yazılan teknoloji hazırlık seviyesi notları güncellendi. Web ortamının kullanıcı dostu olması için geliştirmeler düzenlendi. Ekibimizin fikirleri not edilip diğer bir sprint için düzenlemelerin detayları not edildi.</br> </br>
+Projemizin mobil ortamı kontrol edildi. Mobil çalışmanın detayları konuşulup ek olarak nelerin eklenebileceği düşünülüp fikirler ortaya atıldı. Mobil uygulamanın fonksiyonlarına neler ekleneceği, uygulamada eksikliklerimiz konuşuldu. Marka ismimiz kesinleştirilip, markalaşma sürecine başlanıldı.  Ortaya çıkan projenin dökümantasyonları git-hub üzerinden güncellendi.  Ortaya bir çalışır proje konuldu.
+
 5. ...
 6. ...
 7. ...
