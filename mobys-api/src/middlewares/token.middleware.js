@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
     jwt.verify(token.split(" ")[1], process.env.SECRET_KEY, (err, decoded) => {
       if (!err) {
         req.decoded = decoded;
-        req.supplierId = decoded.supplierId;
+        req.companyId = decoded.companyId;
       }
     });
   } else {

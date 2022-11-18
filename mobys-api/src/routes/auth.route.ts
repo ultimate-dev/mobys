@@ -10,15 +10,16 @@ const SECRET_KEY: any = process.env.SECRET_KEY;
 
 router.post("/login", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    let { supplier } = req.query;
+    let { supplier = false } = req.query;
     let { email, password } = req.body;
 
     let user = await prisma.user.findFirst({
       where: {
         status: "ACTIVE",
         email,
-        ...(supplier ? { role: "SUPPLIER" } : {}),
+        company: supplier ? { type: "SUPPLIER" } : {},
       },
+      include: { company: true },
     });
     if (user) {
       let passwordCompare = await bcrypt.compare(password, user.password);
@@ -27,15 +28,6 @@ router.post("/login", async (req: Request, res: Response, next: NextFunction) =>
         // @ts-ignore
         user["letters"] = user.name[0] + user.surname[0];
 
-        if (user.supplierId) {
-          // @ts-ignore
-          user["supplier"] = await prisma.supplier.findFirst({
-            where: {
-              status: "ACTIVE",
-              id: user.supplierId,
-            },
-          });
-        }
         let token = await jwt.sign({ ...user, time: new Date() }, SECRET_KEY);
         res.json({
           error: false,
@@ -61,7 +53,7 @@ router.post("/login", async (req: Request, res: Response, next: NextFunction) =>
 
 router.post("/verify", async (req: Request, res: Response, next: NextFunction) => {
   try {
-    let { supplier } = req.query;
+    let { supplier = false } = req.query;
     let { token } = req.body;
     if (token) {
       let decoded: any = await jwt.verify(token, SECRET_KEY);
@@ -70,8 +62,9 @@ router.post("/verify", async (req: Request, res: Response, next: NextFunction) =
           where: {
             status: "ACTIVE",
             email: decoded.email,
-            ...(supplier ? { role: "SUPPLIER" } : {}),
+            company: supplier ? { type: "SUPPLIER" } : {},
           },
+          include: { company: true },
         });
         if (user)
           res.json({

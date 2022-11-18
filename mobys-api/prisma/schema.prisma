@@ -10,10 +10,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Supplier {
+model Company {
   id           Int           @id @default(autoincrement())
+  logo         String        @db.Text
   name         String
   status       Status        @default(ACTIVE)
+  type         CompanyType
+  address      String
+  phone        String
+  email        String
+  dec          String?       @db.Text
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @default(now()) @updatedAt
   users        User[]
@@ -21,17 +27,16 @@ model Supplier {
 }
 
 model User {
-  id         Int       @id @default(autoincrement())
-  email      String    @unique
-  name       String
-  surname    String
-  password   String
-  role       UserRole
-  status     Status    @default(ACTIVE)
-  supplierId Int?
-  supplier   Supplier? @relation(fields: [supplierId], references: [id])
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @default(now()) @updatedAt
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String
+  surname   String
+  password  String
+  status    Status   @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  companyId Int
+  company   Company  @relation(fields: [companyId], references: [id])
 }
 
 model MarbleBlock {
@@ -45,19 +50,19 @@ model MarbleBlock {
   createdAt         DateTime           @default(now())
   updatedAt         DateTime           @default(now()) @updatedAt
   marbleBlockImages MarbleBlockImage[]
-  supplierId        Int
-  supplier          Supplier           @relation(fields: [supplierId], references: [id])
+  companyId         Int
+  company           Company            @relation(fields: [companyId], references: [id])
 }
 
 model MarbleBlockImage {
   id            Int           @id @default(autoincrement())
   image         String
   type          BlockPosition
-  marbleBlockId Int
-  marbleBlock   MarbleBlock   @relation(fields: [marbleBlockId], references: [id])
   status        Status        @default(ACTIVE)
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @default(now()) @updatedAt
+  marbleBlockId Int
+  marbleBlock   MarbleBlock   @relation(fields: [marbleBlockId], references: [id])
 }
 
 enum BlockPosition {
@@ -75,7 +80,7 @@ enum Status {
   DELETED
 }
 
-enum UserRole {
+enum CompanyType {
   SUPPLIER
   CUSTOMER
 }
