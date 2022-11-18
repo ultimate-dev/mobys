@@ -112,16 +112,59 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
 # :hash: Teknoloji Hazırlık Seviyeleri
 
 ###  :one: THS1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Projemizde mermer kalitesi, deseni, kırığı, renk seçimi gibi tespit işlemleri yapılmıştır. Öncelikle bir bilirkişiden mermer kalitesi analizi için gerekli bilgiler alınmıştır. Bu bilgiler doğrultusunda proje gelişiminin sağlanması hedeflenmiştir. Projenin ileri seviyelere yükselmesi için çeşitli desenler araştırılıp, geliştirilmiştir. Mermer kalitesinde mermerin kalite metriklerine özel filtreler uygulanmaya çalışılmıştır. Mermerin renk tespitinde mermer üzerindeki renk çoğunluğu baz alınıp, çoğunlukta olan rengi seçme hedeflenmiştir. Mermer desen tespitinde ise mermerde tekrarlı devam eden desenlerin seçilmesi baz alınmıştır.  Mermer kırığında ise mermerin kırığının derecesi, kırık görüntüsünün filtreler ile ortaya çıkarılması hedeflenmiştir. 
 
 ###  :two: THS2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Bir mermerin kalitesi genellikle; o mermerin üzerindeki fosiller ve lekeler kadar, mermerin yoğunluğuna ve büyüklüğüne bağlı olarak değişebilmektedir.  Çalışmamızda mermer kalitesinin sınıflandırılmasına ilişkin çeşitli klasik yaklaşımlar veya yöntemler ortaya konulmuştur. İlgili çalışmaların çoğunda mermer levhalarının fotoğraflarının kalite sınıflandırma sistemlerine dâhil edilmeden önce;  Ortanca(Median) Süzgeç gibi farklı filtrelerle ya da çatlaklık özelliklerinin çıkartılması gibi diğer görüntü ön-işleme sürecinden geçirildiği bilinmektedir.  Projemizde ortanca süzgeç fonksiyonu kullanılıp, mermer kırıklarının netleştirilip ortaya çıkarılması sağlanmıştır. Şekil 1’de ortanca (median) süzgeç filtresi gösterilmiştir.
+![image](https://user-images.githubusercontent.com/33163650/202729857-b2e5450b-c8c1-4f30-9037-0f8c54050fbe.png)
+<p align="center"> <b>Şekil 1.</b> Ortanca (median) süzgeç filtresi </p>
+
+Bu çalışmada mermerlerin görsellerine ait resimlerden mermerlerdeki yüzeyler sorunların çözümlenmesi hedeflenmiştir. Çalışmamız ile mermerdeki, çatlaklık, desen, tabakalaşma, çatlak boyut açıklığı, çatlak boyut kapalılığı, mineral yapı, model, mermer kalite sınıfı, renk, homojenlik gibi tespitler mermer sınıflandırılmasına dahil edilmiştir.  Projemizde evrişim (convolution) kenar bulma fonksiyonlarından kirsch operatörü kullanılmıştır. Şekil 2’de Evrişim (convulution) kenar bulma fonksiyonlarından kirsch operatörü gösterilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202730284-193653ed-7659-4ee4-a656-86da437615cd.png)
+<p align="center"> <b>Şekil 2.</b> Evrişim (convolution) kenar bulma fonksiyonlarından kirsch operatörü </p>
+
+Farklı mermer kalitesine ait mermer fotoğraflarını içeren bir görsel veri seti kullanılarak çalışmada yüksek düzeyde doğruluk oranları elde edilmiştir. Projemizde data setteki görseller Laplacian çekirdeği kullanılarak süzgeçlenmiştir. Aşağıdaki görselde Laplacian çekirdeği kullanılarak süzgeçlenen örnek fotoğrafı görebilirsiniz.  Bu projede algoritmalar kullanılarak, mermer levhalarının otomatik olarak sınıflandırılmasını yapan bir sistem ortaya konulmuştur.  Şekil 3’de Laplacian filtresi gösterilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202730459-1b9530bf-bc4d-41fb-972d-581d4207e5ea.png)
+<p align="center"> <b>Şekil 3.</b> Orijinal imgenin Laplacian filtresi ile filtrelenip çıkan sonuç görseli </p>
 
 ###  :three: THS3
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Bu çalışmada; mermer endüstrisinde yakın gelecekte insan müdahalesini ve insan iş gücü gerekliliklerini minimize edebilecek şekilde, en az mermer eksperlerinin ortaya koyduğu düzeyde doğru sınıflandırmayı, çok hızlı ve etkin bir şekilde, otomatikleştirilmiş olarak yapabilecek yeni bir mermer sınıflandırması modeli ortaya konulmuştur. Bugüne kadar literatürde ki bilinen tüm çalışmalardan farklı olarak; mermer kalitesinin çoklu sınıflandırmasında evrişimsel sinir ağlarının bu düzeyde başarılı sonuç vermesi ve evrişimsel sinir ağlarının doğruluk oranını, aşırı uyumu da engelleyecek şekilde arttıran bazı veri artırım tekniklerinin özgün bir biçimde kullanımı, bu çalışmanın önemini ortaya koyan yeni bir yaklaşımdır.
+
+Bu çalışmada kullanılan farklı filtreler ile mermer fotoğraflarının filtrelenmesi ile ortaya çıkan yapı Şekil 4’de gösterilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202730938-94426878-d1b4-423d-884d-c77099307048.png)
+<p align="center"> <b>Şekil 4.</b> Farklı algoritmalar ile filtrelenen mermer fotoğrafının ortaya çıkan yapısı </p>
+
+Şekil 4’de de gösterildiği gibi algoritmamız yüzeysel işlevleri yakalamıştır. Yüzeysel sorunların doğruluk oranını arttırmak amacıyla; çalışmamızda çeşitli filtrelerin denenmesine karar verilmiştir. Bu filtrelerin en iyi sonuç verenleri kullanılmıştır. Bu çalışmada; mermer levhalarının görselleri kullanılarak mermer kalitesinin sınıflandırılmasında yeni bir model ve yaklaşım ortaya konulmuştur.  Çalışmamızın mermer piyasasına olan katkısı; mermer kalitesinin çoklu sınıflandırılmasında özel olarak tasarlanmış bir evrişimsel modelin mermerleri ek bir iş gücü olmadan, doğruluk payı yüksek olarak sınıflandırmasıdır. Mermer fotoğraflarındaki yüzeysel sorunların iş gücü gerektirmeden, bir ölçüm veya gözleme gerek duymadan somut bir şekilde ortaya koyulmasıdır.
 
 ###  :five: THS4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Bu çalışmada örnekler A, B ve C kalite sınıfı olarak sınıflandırılmaya çalışılmıştır. Sınıflandırma başarısı için belirli doğruluk kriterleri kullanılmıştır. Yöntem olarak Derin Öğrenme Algoritmalarından biri olan konvolüsyonel sinir ağı kullanılmaktadır. Derin Öğrenme ile bir nesnenin diğerinden ayırt edilmesini sağlayan çizgi, kontur, köşe, renk ve doku gibi basit ana bileşenlerin hesaplanması ve ayrıca bu bileşenlerin sonraki katmanların daha karmaşık bileşenleriyle bağlantısının hesaplanmasına denir. 
+
+Bir görüntüye evrişim katmanı uygulandığında, görüntüden belirli özellikler elde edilebilir. Bu işlem, görüntü üzerindeki matematiksel işlemli bir filtre ile işlenerek gerçekleştirilir. Evrişim katmanının matematiksel bir işlemi Şekil 5’de verilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202731291-b57a4c2c-c5c7-41da-9935-0755501a65de.png)
+<p align="center"> <b>Şekil 5.</b> Evrişim işlemi(a) filtre, görüntünün matrisi (b), evrişim sonucu (c) </p>
+
+Havuzlama katmanları ile sayısı büyük ölçüde artırılan özellikler, basit bir işlem kullanılarak azaltılabilir. Maksimum havuzlama işlemi, filtrede belirli bir boyuta sahip en büyük öğeyi seçer ve diğerlerini seçmez. Böylece, yalnızca en yüksek değerlere sahip öğeler, belirli adımlarla belirli pencere boyutuna göre seçilir ve diğerleri seçilir.
+
+Tamamen bağlı katman, klasik yapay sinir ağlarının yapısını kapsar, gelen verileri toplar ve aktarır. Genellikle bir sonraki katman softmax katmanıdır ve sınıf etiketini en yüksek değerli sonuca göre belirleyen sınıflandırma katmanı eklenir. Şekil 6’da klasik bir Derin Öğrenme ağı verilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202731518-f645e0d9-02cb-4210-b60f-6d601d901143.png)
+<p align="center"> <b>Şekil 6.</b> Klasik bir Derin Öğrenme ağı </p>
+
+Projemizde renk tespiti için Sklearn kütüphanesinden KMeans kullanılmıştır.  Renk tonlarının yüzdelikleri alınmıştır. En yüksek yüzdeli 3 renk tonu seçilip, ortaya konulmuştur. Şekil 7’de KMeans ile renk yüzdesi sonucu gösterilmiştir.
+
+![image](https://user-images.githubusercontent.com/33163650/202731675-a30df7f6-f6e9-4dd8-ba6d-9426fcdf1dbe.png)
+<p align="center"><b>Şekil 7.</b> KMeans ile renk yüzdesi sonucu gösterilmesi </p>
+
+Projemizde 8 ayrı filtre kullanılarak sonuçların doğruluk yüzdesinin artması hedeflenmiştir. Draw Contours ile kontur çizimleri yapılır kırık bulma hedeflenmiştir. Şekil 8’de Draw Contours yapılmıştır.
+
+![image](https://user-images.githubusercontent.com/33163650/202731825-33fded47-e251-48ac-80be-0efc7cb009c1.png)
+<p align="center"> <b>Şekil 8.</b> Draw Contours ile kontur çizimi </p>
+
+
 
 ###  :four: THS5
 ...
