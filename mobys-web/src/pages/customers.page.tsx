@@ -55,13 +55,7 @@ const SuppliersPage = () => {
               <DataTable
                 columns={SUPPLIER_COLUMNS}
                 data={customerController.customers}
-                actions={[
-                  {
-                    icon: "eye",
-                    color: "primary",
-                    onClick: (record) => navgate("/suppliers/" + record.id),
-                  },
-                ]}
+                actions={[]}
                 buttons={[
                   {
                     text: "Yenile",
