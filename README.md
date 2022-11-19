@@ -100,7 +100,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
      ```
 
 # :calendar: İş Planı
-[mobys plan](https://github.com/users/ultimate-dev/projects/4)
+[![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/is-planı.png)](https://github.com/users/ultimate-dev/projects/4)
 
 # :star: Sistem Planı
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
