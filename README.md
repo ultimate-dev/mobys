@@ -163,23 +163,6 @@ Projemizde 8 ayrı filtre kullanılarak sonuçların doğruluk yüzdesinin artma
 ![image](https://user-images.githubusercontent.com/33163650/202731825-33fded47-e251-48ac-80be-0efc7cb009c1.png)
 <p align="center"> <b>Şekil 8.</b> Draw Contours ile kontur çizimi </p>
 
-
-
-###  :five: THS5
-...
-
-###  :six: THS6
-...
-
-###  :seven: THS7
-...
-
-###  :eight: THS8
-...
-
-### :nine:  THS9
-...
-
 ## :bomb: Toplantılar
 
 <b>1.Toplantı(24.10.2022):</b> Bu sprintimizde proje ile alakalı fikir alışverişi yapıldı. Proje ile ilgili bilir kişiden mermer üzerine kalite bilgileri, önem bilgileri, desenlerin neye göre belirlendiği, renklerin neye göre belirlendiği, fiyat konusunda baz alınacak şeyler, kaliteli bir mermerin nasıl belirleneceği öğrenildi. Yapacağımız şeyler konuşulup, bir yol haritası oluşturuldu. Projelerimizde neler olacağı, neler tespit edileceği konuşuldu. Projemizin hangi dille yazılacağı, hangi platformda yayınlanacağı kararlaştırıldı. Fikir alışverişinde ilerlememiz ile alakalı detaylar konuşuldu. Rakip analizi yapılıp eksikler ve fazlalar tartıldı. Kullanacağımız desenlere yönelik fonksiyonlar düşüldü. Kullanacağımız desenler konuşulup, seçeneklerimizi arttırdık.  </br> </br>
