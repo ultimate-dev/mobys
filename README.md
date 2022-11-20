@@ -100,7 +100,7 @@ Mermer Ocağı Bilgi Yönetim Sistemi (MOBYS), Mermer bloğu satışı yapmakta 
      ```
 
 # :calendar: İş Planı
-[mobys plan](https://github.com/users/ultimate-dev/projects/4)
+[![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/is-plani.png)](https://github.com/users/ultimate-dev/projects/4)
 
 # :star: Sistem Planı
 ![Sistem Planı](https://github.com/ultimate-dev/mobys/blob/main/mobys-docs/sistem-yapisi.png)
@@ -138,7 +138,7 @@ Bu çalışmada kullanılan farklı filtreler ile mermer fotoğraflarının filt
 
 Şekil 4’de de gösterildiği gibi algoritmamız yüzeysel işlevleri yakalamıştır. Yüzeysel sorunların doğruluk oranını arttırmak amacıyla; çalışmamızda çeşitli filtrelerin denenmesine karar verilmiştir. Bu filtrelerin en iyi sonuç verenleri kullanılmıştır. Bu çalışmada; mermer levhalarının görselleri kullanılarak mermer kalitesinin sınıflandırılmasında yeni bir model ve yaklaşım ortaya konulmuştur.  Çalışmamızın mermer piyasasına olan katkısı; mermer kalitesinin çoklu sınıflandırılmasında özel olarak tasarlanmış bir evrişimsel modelin mermerleri ek bir iş gücü olmadan, doğruluk payı yüksek olarak sınıflandırmasıdır. Mermer fotoğraflarındaki yüzeysel sorunların iş gücü gerektirmeden, bir ölçüm veya gözleme gerek duymadan somut bir şekilde ortaya koyulmasıdır.
 
-###  :five: THS4
+###  :four: THS4
 Bu çalışmada örnekler A, B ve C kalite sınıfı olarak sınıflandırılmaya çalışılmıştır. Sınıflandırma başarısı için belirli doğruluk kriterleri kullanılmıştır. Yöntem olarak Derin Öğrenme Algoritmalarından biri olan konvolüsyonel sinir ağı kullanılmaktadır. Derin Öğrenme ile bir nesnenin diğerinden ayırt edilmesini sağlayan çizgi, kontur, köşe, renk ve doku gibi basit ana bileşenlerin hesaplanması ve ayrıca bu bileşenlerin sonraki katmanların daha karmaşık bileşenleriyle bağlantısının hesaplanmasına denir. 
 
 Bir görüntüye evrişim katmanı uygulandığında, görüntüden belirli özellikler elde edilebilir. Bu işlem, görüntü üzerindeki matematiksel işlemli bir filtre ile işlenerek gerçekleştirilir. Evrişim katmanının matematiksel bir işlemi Şekil 5’de verilmiştir.
@@ -163,23 +163,6 @@ Projemizde 8 ayrı filtre kullanılarak sonuçların doğruluk yüzdesinin artma
 ![image](https://user-images.githubusercontent.com/33163650/202731825-33fded47-e251-48ac-80be-0efc7cb009c1.png)
 <p align="center"> <b>Şekil 8.</b> Draw Contours ile kontur çizimi </p>
 
-
-
-###  :four: THS5
-...
-
-###  :six: THS6
-...
-
-###  :seven: THS7
-...
-
-###  :eight: THS8
-...
-
-### :nine:  THS9
-...
-
 ## :bomb: Toplantılar
 
 <b>1.Toplantı(24.10.2022):</b> Bu sprintimizde proje ile alakalı fikir alışverişi yapıldı. Proje ile ilgili bilir kişiden mermer üzerine kalite bilgileri, önem bilgileri, desenlerin neye göre belirlendiği, renklerin neye göre belirlendiği, fiyat konusunda baz alınacak şeyler, kaliteli bir mermerin nasıl belirleneceği öğrenildi. Yapacağımız şeyler konuşulup, bir yol haritası oluşturuldu. Projelerimizde neler olacağı, neler tespit edileceği konuşuldu. Projemizin hangi dille yazılacağı, hangi platformda yayınlanacağı kararlaştırıldı. Fikir alışverişinde ilerlememiz ile alakalı detaylar konuşuldu. Rakip analizi yapılıp eksikler ve fazlalar tartıldı. Kullanacağımız desenlere yönelik fonksiyonlar düşüldü. Kullanacağımız desenler konuşulup, seçeneklerimizi arttırdık.  </br> </br>
@@ -194,12 +177,6 @@ Kullanılan tespitlerin doğrulukları kontrol edildi. Renk tespitinin doğruluk
 <b>4.Toplantı(14.11.2022):</b> Bu sprintte kodların birleştirilmiş hali görüldü. Web ortamına aktarılan kodların çalışması gözlendi. Web ortamında olan eksikler not edilip, geliştirilmesi için fikir alışverişi yapıldı. Web ortamındaki algoritmaya eklenen data set görselindeki tespitlerin doğruluğu gözlendi. Proje için her bir sprintte yazılan teknoloji hazırlık seviyesi notları güncellendi. Web ortamının kullanıcı dostu olması için geliştirmeler düzenlendi. Ekibimizin fikirleri not edilip diğer bir sprint için düzenlemelerin detayları not edildi.</br> </br>
 Projemizin mobil ortamı kontrol edildi. Mobil çalışmanın detayları konuşulup ek olarak nelerin eklenebileceği düşünülüp fikirler ortaya atıldı. Mobil uygulamanın fonksiyonlarına neler ekleneceği, uygulamada eksikliklerimiz konuşuldu. Marka ismimiz kesinleştirilip, markalaşma sürecine başlanıldı.  Ortaya çıkan projenin dökümantasyonları git-hub üzerinden güncellendi.  Ortaya bir çalışır proje konuldu.
 
-5. ...
-6. ...
-7. ...
-8. ...
-9. ...
-10. ...
 
 
 
