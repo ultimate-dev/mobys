@@ -27,7 +27,7 @@ def image():
             img_url)
         # Get the top colors
         colors = colorService.getTopColors(img, 3)
-
+        
         # Return the data
         return jsonify(colors=colors)
     except Exception as e:

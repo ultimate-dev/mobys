@@ -27,6 +27,7 @@ router.get("/", async (req: any, res, next) => {
 router.put("/", async (req: any, res: Response, next: NextFunction) => {
   try {
     let { x, y, z, weight, images, companyId } = req.body;
+    console.log(images);
 
     let colors = {};
     await Promise.all(
@@ -75,6 +76,7 @@ router.post("/:id", async (req: any, res: Response, next: NextFunction) => {
     let colors = {};
     await Promise.all(
       Object.keys(images).map(async (key) => {
+        
         let data = await marbleService.imageService(images[key]);
         colors = { ...data.colors };
       })

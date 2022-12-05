@@ -11,6 +11,7 @@ axios.interceptors.request.use((config) => {
 const imageService = async (image: string) => {
   try {
     let { data } = await axios.get("/image", { params: { img_url: image } });
+    console.log(data)
     return data;
   } catch (e) {
     console.log(e);

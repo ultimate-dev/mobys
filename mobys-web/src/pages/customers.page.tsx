@@ -47,11 +47,11 @@ const SuppliersPage = () => {
 
   return (
     <>
-      <Breadcrumb title={"Tedarikçiler"} />
+      <Breadcrumb title={"Müşteriler"} />
       <Row>
         <Col>
           <Tabs type="card">
-            <Tabs.TabPane tab={"Tedarikçiler"} key="suppliers">
+            <Tabs.TabPane tab={"Müşteriler"} key="suppliers">
               <DataTable
                 columns={SUPPLIER_COLUMNS}
                 data={customerController.customers}
