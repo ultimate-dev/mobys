@@ -32,11 +32,8 @@ export default () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        headerMode="none"
         initialRouteName="Main"
-        screenOptions={{
-          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-        }}
+     
       >
         <Stack.Screen name="Login" component={LoginScreen} {...screen(false)} />
         <Stack.Screen name="Main" component={MainNavigator} {...screen(true)} />

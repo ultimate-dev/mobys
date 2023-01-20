@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "end",
+    justify: "end",
     flex: 1,
   },
   logo: {
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     width: "100%",
     zIndex: 2,
     alignItems: "center",
-    justifyContent: "center",
+    justify: "center",
   },
   form: {
     zIndex: 2,
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     height: 50,
     marginVertical: 10,
     alignItems: "center",
-    justifyContent: "center",
+    justify: "center",
   },
   button_text: {
     color: "#fff",

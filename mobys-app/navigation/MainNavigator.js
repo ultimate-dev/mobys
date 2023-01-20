@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     flex: 1,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justify: "center",
     height: 62,
   },
   bottomtab_button_icon: {

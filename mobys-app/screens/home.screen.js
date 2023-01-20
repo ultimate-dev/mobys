@@ -123,21 +123,21 @@ const HomeScreen = () => {
             />
           </View>
           <View style={{ marginVertical: 10 }}>
-            <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <View style={{ flexDirection: "row", justify: "center" }}>
               <PhotoInput
                 loc="Üst"
                 value={values.images.top}
                 onChange={(e) => setValues({ ...values, images: { ...values.images, top: e } })}
               />
             </View>
-            <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <View style={{ flexDirection: "row", justify: "center" }}>
               <PhotoInput
                 loc="Ön"
                 value={values.images.front}
                 onChange={(e) => setValues({ ...values, images: { ...values.images, front: e } })}
               />
             </View>
-            <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <View style={{ flexDirection: "row", justify: "center" }}>
               <PhotoInput
                 loc="Sağ"
                 value={values.images.right}
@@ -154,7 +154,7 @@ const HomeScreen = () => {
                 onChange={(e) => setValues({ ...values, images: { ...values.images, left: e } })}
               />
             </View>
-            <View style={{ flexDirection: "row", justifyContent: "center" }}>
+            <View style={{ flexDirection: "row", justify: "center" }}>
               <PhotoInput
                 loc="Arka"
                 value={values.images.back}
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     margin: 3,
     alignItems: "center",
-    justifyContent: "center",
+    justify: "center",
   },
   photo_text: {
     fontFamily: "Poppins_500Medium",
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#521719",
     height: 50,
     alignItems: "center",
-    justifyContent: "center",
+    justify: "center",
     width: "100%",
   },
   button_text: {
